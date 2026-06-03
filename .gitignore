@@ -1,0 +1,11 @@
+node_modules/
+*.pdf
+*.docx
+generate-pdf.js
+generate-docx.py
+print.html
+package.json
+package-lock.json
+_*.txt
+fix-*.py
+.workbuddy/

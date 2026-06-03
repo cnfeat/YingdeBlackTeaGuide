@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>英德红茶购买攻略 · 本地人带路</title>
+<meta name="description" content="英德本地人写的红茶购买攻略，涵盖等级、价格、渠道、挑选技巧，买茶不踩坑。">
+<style>
+:root {
+  --bg: #FFFAFA;
+  --card: #FFFFFF;
+  --text: #3D2B1F;
+  --text2: #8B7355;
+  --text3: #B8A088;
+  --accent: #C90314;
+  --accent-light: #E05050;
+  --gold: #D46070;
+  --gold-light: #FFF0F0;
+  --border: #F0E0E0;
+  --green: #5B8C5A;
+  --green-bg: #EDF5EC;
+  --amber: #D4922A;
+  --amber-bg: #FFF0F0;
+  --radius: 12px;
+  --shadow: 0 1px 3px rgba(61,43,31,0.04);
+  --shadow-md: 0 2px 8px rgba(61,43,31,0.06);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Nav */
+.top-nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  background: rgba(255,250,250,0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+  padding: 10px 0;
+}
+.nav-inner {
+  max-width: 680px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16px;
+}
+.nav-logo {
+  font-size: 16px; font-weight: 600; color: var(--accent);
+  text-decoration: none;
+}
+.nav-sections {
+  display: flex; gap: 4px; overflow-x: auto;
+  -ms-overflow-style: none; scrollbar-width: none;
+}
+.nav-sections::-webkit-scrollbar { display: none; }
+.nav-sections a {
+  flex-shrink: 0; font-size: 12px; color: var(--text2);
+  text-decoration: none; padding: 4px 10px;
+  border-radius: 20px; transition: all 0.2s;
+}
+.nav-sections a:hover, .nav-sections a.active {
+  background: var(--gold-light); color: var(--accent);
+}
+
+/* Hero */
+.hero {
+  padding: 80px 0 40px;
+  text-align: center;
+}
+.hero-icon { font-size: 48px; margin-bottom: 16px; }
+.hero h1 {
+  font-size: 28px; font-weight: 700;
+  color: var(--accent); margin-bottom: 8px;
+}
+.hero .subtitle {
+  font-size: 15px; color: var(--text2);
+  margin-bottom: 24px;
+}
+.hero-badges {
+  display: flex; justify-content: center; gap: 12px;
+  flex-wrap: wrap;
+}
+.hero-badge {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 20px; padding: 6px 14px;
+  font-size: 12px; color: var(--text2);
+}
+
+/* Decorative divider */
+.section-divider {
+  text-align: center;
+  padding: 8px 0 16px;
+  font-size: 12px; color: var(--text3);
+  letter-spacing: 4px;
+}
+
+/* Section */
+.section {
+  padding: 40px 0;
+}
+.section-title {
+  font-size: 20px; font-weight: 700;
+  color: var(--accent); margin-bottom: 12px;
+  display: flex; align-items: center; gap: 8px;
+  position: relative;
+}
+.section-title::after {
+  content: '🍃';
+  font-size: 16px;
+  opacity: 0.5;
+  margin-left: auto;
+}
+.section-title .dot {
+  width: 8px; height: 8px;
+  border-radius: 50%; background: var(--accent); flex-shrink: 0;
+}
+.section-desc {
+  font-size: 14px; color: var(--text2);
+  margin-bottom: 20px;
+}
+
+/* Card */
+.card {
+  background: var(--card); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 20px;
+  margin-bottom: 16px;
+}
+.card h3 {
+  font-size: 16px; font-weight: 600;
+  color: var(--text); margin-bottom: 8px;
+}
+.card p, .card li {
+  font-size: 14px; color: var(--text2);
+}
+.card ul { padding-left: 18px; }
+.card li { margin-bottom: 4px; }
+
+/* Grade Table */
+.grade-table {
+  width: 100%; border-collapse: collapse;
+  font-size: 13px; margin-top: 8px;
+}
+.grade-table th {
+  text-align: left; padding: 10px 8px;
+  border-bottom: 2px solid var(--accent);
+  color: var(--accent); font-weight: 600;
+  font-size: 12px;
+}
+.grade-table td {
+  padding: 12px 8px; border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.grade-table tr:last-child td { border-bottom: none; }
+.grade-table .grade-name { font-weight: 600; color: var(--text); }
+.grade-table .price { color: var(--accent); font-weight: 600; white-space: nowrap; }
+.grade-table .tag {
+  display: inline-block; font-size: 10px; padding: 2px 8px;
+  border-radius: 10px; margin-left: 4px;
+}
+.tag-premium { background: #FFF0F0; color: var(--amber); }
+.tag-daily { background: var(--green-bg); color: var(--green); }
+.tag-gift { background: #FDF2F2; color: #C90314; }
+
+/* Channel Card */
+.channel-card {
+  background: var(--card); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 16px 20px;
+  margin-bottom: 12px; border-left: 4px solid var(--accent);
+}
+.channel-card.online { border-left-color: var(--green); }
+.channel-card.offline { border-left-color: var(--accent); }
+.channel-card.factory { border-left-color: var(--amber); }
+.channel-card h4 {
+  font-size: 15px; font-weight: 600; margin-bottom: 4px;
+}
+.channel-card .ch-desc {
+  font-size: 13px; color: var(--text2);
+}
+
+/* Tip List */
+.tip-item {
+  display: flex; gap: 12px; padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+.tip-item:last-child { border-bottom: none; }
+.tip-icon {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--gold-light); display: flex;
+  align-items: center; justify-content: center;
+  font-size: 18px; flex-shrink: 0;
+}
+.tip-content h4 { font-size: 14px; font-weight: 600; margin-bottom: 2px; }
+.tip-content p { font-size: 13px; color: var(--text2); }
+
+/* Gift Grid */
+.gift-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+@media (max-width: 400px) {
+  .gift-grid { grid-template-columns: 1fr; }
+}
+.gift-card {
+  background: var(--card); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 16px;
+}
+.gift-card .gift-budget {
+  font-size: 18px; font-weight: 700; color: var(--accent);
+  margin-bottom: 4px;
+}
+.gift-card .gift-for {
+  font-size: 13px; font-weight: 600;
+  color: var(--text); margin-bottom: 6px;
+}
+.gift-card .gift-suggest {
+  font-size: 12px; color: var(--text2);
+  line-height: 1.6;
+}
+
+/* FAQ */
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+.faq-q {
+  display: flex; justify-content: space-between;
+  align-items: center; padding: 16px 0;
+  cursor: pointer; font-size: 14px; font-weight: 600;
+  color: var(--text);
+}
+.faq-q .faq-arrow {
+  font-size: 12px; color: var(--text3);
+  transition: transform 0.2s;
+}
+.faq-item.open .faq-arrow { transform: rotate(180deg); }
+.faq-a {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.3s ease;
+  font-size: 13px; color: var(--text2);
+  line-height: 1.8; padding: 0;
+}
+.faq-item.open .faq-a {
+  max-height: 300px; padding-bottom: 16px;
+}
+
+/* About */
+.about-section {
+  text-align: center; padding: 40px 0 60px;
+}
+.about-section .about-title {
+  font-size: 20px; font-weight: 700;
+  color: var(--accent); margin-bottom: 8px;
+}
+.about-section .about-desc {
+  font-size: 14px; color: var(--text2);
+  max-width: 400px; margin: 0 auto 24px;
+}
+.qr-placeholder {
+  width: 160px; height: 160px;
+  margin: 0 auto 16px;
+  background: var(--gold-light);
+  border-radius: var(--radius);
+  display: flex; align-items: center;
+  justify-content: center;
+  border: 2px dashed var(--border);
+  color: var(--text3); font-size: 13px;
+}
+.social-links {
+  display: flex; justify-content: center; gap: 20px;
+  margin-top: 16px;
+}
+.social-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 16px; border-radius: 20px;
+  text-decoration: none; font-size: 13px;
+  font-weight: 500;
+}
+.social-wechat { background: var(--green-bg); color: var(--green); }
+.social-xiaohongshu { background: #FDF2F2; color: #C90314; }
+
+/* Footer */
+.footer {
+  text-align: center; padding: 24px 0;
+  border-top: 1px solid var(--border);
+  font-size: 12px; color: var(--text3);
+}
+
+/* Card image */
+.card-img {
+  width: 100%; border-radius: 8px;
+  margin-bottom: 12px; object-fit: cover;
+}
+
+/* Back to top */
+.back-to-top {
+  position: fixed; bottom: 24px; right: 20px;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--accent); color: #fff;
+  border: none; font-size: 20px;
+  cursor: pointer; z-index: 99;
+  opacity: 0; transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
+  box-shadow: 0 2px 8px rgba(61,43,31,0.2);
+  display: flex; align-items: center; justify-content: center;
+  line-height: 1;
+}
+.back-to-top.visible {
+  opacity: 1; transform: translateY(0);
+}
+
+/* Placeholder marker */
+.placeholder {
+  background: #FFF0F0; border: 1px dashed #F5C0C0;
+  border-radius: 6px; padding: 2px 6px;
+  font-size: 11px; color: #C90314;
+  font-weight: 500;
+}
+
+/* Mobile optimizations */
+@media (max-width: 480px) {
+  .hero h1 { font-size: 24px; }
+  .section-title { font-size: 18px; }
+  .grade-table { font-size: 12px; }
+  .grade-table th, .grade-table td { padding: 8px 4px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">英德红茶攻略</a>
+    <div class="nav-sections">
+      <a href="#intro">认识</a>
+      <a href="#grade">等级</a>
+      <a href="#channel">渠道</a>
+      <a href="#quality">挑选</a>
+      <a href="#brew">冲泡</a>
+      <a href="#insider">内幕</a>
+      <a href="#gift">送礼</a>
+      <a href="#faq">问答</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-icon">🍵</div>
+    <h1>英德红茶购买攻略</h1>
+    <p class="subtitle">本地人带路，买茶不踩坑</p>
+    <div class="hero-badges">
+      <span class="hero-badge">3500字 14页</span>
+      <span class="hero-badge">覆盖线上+线下渠道</span>
+      <span class="hero-badge">持续更新</span>
+    </div>
+  </section>
+
+  <!-- Section 1: Intro -->
+  <section class="section" id="intro">
+    <h2 class="section-title"><span class="dot"></span>认识英德红茶</h2>
+    <p class="section-desc">3 分钟了解为什么英德红茶值得买。</p>
+
+    <div class="section-divider">— · —</div>
+
+    <div class="card">
+      <h3>英德红茶是什么？</h3>
+      <img src="红茶攻略插图/红茶品类.PNG" class="card-img" alt="英德红茶品类">
+      <p>
+        英德红茶是广东省英德市特产，为<strong>中国国家地理标志产品</strong>。
+        与云南滇红、安徽祁红并称中国三大红茶，被誉为「中国红茶后起之秀」「世界高香红茶」。
+        核心品种「英红九号」由广东省农业科学院茶叶研究所于 <strong>1961 年</strong>选育，
+        茶汤红艳明亮、金圈明显，香气浓郁纯正、花果香突出。
+        自问世以来，远销西欧、北美、大洋洲、中东等 70 多个国家和地区。
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>历史与国际声誉</h3>
+      <img src="红茶攻略插图/伊丽莎白.PNG" class="card-img" alt="伊丽莎白女王与英德红茶">
+      <p>
+        英德茶业历史悠久，可追溯至 1200 多年前的唐朝。<br>
+        现代英德红茶始于 <strong>1955 年</strong>，当年试种云南大叶种成功，<strong>1959 年</strong>成功试制出英德红茶。<br><br>
+        <strong>1963 年</strong>，英国女王在盛大宴会上用英德红茶招待贵宾，英德红茶由此享誉国际。<br><br>
+        <strong>2023 年 4 月 7 日</strong>，中法两国元首在广州松园举行非正式会晤，英德红茶·金毛毫作为「国茶」代表用于茶叙现场接待。央视著名主播康辉品尝后赞美「挺甜的，茶香」。<br><br>
+        如今，英德红茶已入选<strong>首批中欧地理标志保护清单</strong>，国际影响力持续提升。
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>感官特征</h3>
+      <img src="红茶攻略插图/感官特征.PNG" class="card-img" alt="英德红茶感官特征">
+
+      <div style="margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--border);">
+        <h4 style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:4px;">外形</h4>
+        <p style="font-size:13px;color:var(--text2);">条索紧结肥壮、乌润油亮、金毫显露；特级金毫茶「金毫满枝、金黄油润」。</p>
+      </div>
+
+      <div style="margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--border);">
+        <h4 style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:4px;">香气</h4>
+        <p style="font-size:13px;color:var(--text2);">鲜浓纯正、花香明显、高锐持久；金毫茶「嫩浓芬芳、毫香清幽」。英红九号具有自然的<strong>花果香</strong>，高长持久。</p>
+      </div>
+
+      <div style="margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--border);">
+        <h4 style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:4px;">汤色</h4>
+        <p style="font-size:13px;color:var(--text2);">红艳明亮、<strong>金圈明显</strong>。</p>
+      </div>
+
+      <div style="margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--border);">
+        <h4 style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:4px;">滋味</h4>
+        <p style="font-size:13px;color:var(--text2);">浓、强、鲜、爽；浓厚甜润、醇滑回甘、<strong>收敛性强但不苦涩</strong>。英红九号耐泡，可达 7–9 泡。</p>
+      </div>
+
+      <div style="margin-bottom:8px;">
+        <h4 style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:4px;">叶底</h4>
+        <p style="font-size:13px;color:var(--text2);">柔软红亮、匀整。</p>
+      </div>
+
+      <p style="font-size:11px;color:var(--text3);border-top:1px solid var(--border);padding-top:8px;">
+        依据：清远市地方标准 DB4418/T 0001—2018（地理标志产品 英德红茶）
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>核心产区</h3>
+      <img src="红茶攻略插图/英德茶园.PNG" class="card-img" alt="英德茶园">
+      <p style="font-size:13px;color:var(--text2);margin-bottom:12px;">
+        英德红茶主产于英德市境内，以下为四大核心产区，各有风味特色。
+      </p>
+
+      <div style="margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--border);">
+        <h4 style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:4px;">
+          英红镇 <span style="font-size:11px;color:var(--accent);font-weight:500;">发源地 + 产业中心</span>
+        </h4>
+        <p style="font-size:13px;color:var(--text2);margin-bottom:3px;">
+          英德红茶诞生地、核心中的核心。原广东省英德茶场（1951 年）所在地，红旗茶厂、广东省农科院茶叶研究所均设于此，是英红九号的标杆产区。
+        </p>
+        <p style="font-size:12px;color:var(--gold);">风味：高香、浓强鲜爽、花果蜜韵突出。</p>
+      </div>
+
+      <div style="margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--border);">
+        <h4 style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:4px;">
+          横石塘镇 <span style="font-size:11px;color:var(--green);font-weight:500;">石门台生态带</span>
+        </h4>
+        <p style="font-size:13px;color:var(--text2);margin-bottom:3px;">
+          生态顶级、高端茶主产区，紧邻石门台国家级自然保护区。高山云雾、弱酸性红壤、山泉水灌溉，有机茶多。
+        </p>
+        <p style="font-size:12px;color:var(--gold);">风味：清甜细腻、毫香足、回甘长。</p>
+      </div>
+
+      <div style="margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--border);">
+        <h4 style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:4px;">
+          石牯塘镇 <span style="font-size:11px;color:var(--amber);font-weight:500;">喀斯特高香区</span>
+        </h4>
+        <p style="font-size:13px;color:var(--text2);margin-bottom:3px;">
+          老牌优质产区，喀斯特地貌，矿物质丰富。海拔 300–600 米，昼夜温差大，香气格外浓郁。
+        </p>
+        <p style="font-size:12px;color:var(--gold);">风味：香气高扬、滋味醇厚、耐泡。</p>
+      </div>
+
+      <div style="margin-bottom:6px;">
+        <h4 style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:4px;">
+          石灰铺镇 <span style="font-size:11px;color:var(--text3);font-weight:500;">性价比核心区</span>
+        </h4>
+        <p style="font-size:13px;color:var(--text2);margin-bottom:3px;">
+          产量大、品质稳、性价比高，紧邻英红镇。丘陵缓坡，管理成熟、标准化程度高。
+        </p>
+        <p style="font-size:12px;color:var(--gold);">风味：浓强鲜爽、甜感足、日常口粮首选。</p>
+      </div>
+
+      <p style="font-size:11px;color:var(--text3);margin-top:10px;padding-top:8px;border-top:1px solid var(--border);">
+        望埠镇、大站镇、浛洸镇、西牛镇：地理标志范围内，品质合格，价格亲民，多做口粮茶与大宗茶。
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 2: Grade & Price -->
+  <section class="section" id="grade">
+    <h2 class="section-title"><span class="dot"></span>等级与价格</h2>
+    <p class="section-desc">这是最核心的内容。按清远市地方标准，看懂这张表，没人能忽悠你。</p>
+
+    <img src="红茶攻略插图/一芽两叶.PNG" style="width:100%;max-width:600px;display:block;margin:0 auto 16px;border-radius:8px;" alt="一芽两叶采摘标准">
+
+    <div class="card" style="padding: 12px 8px 8px;">
+      <table class="grade-table">
+        <thead>
+          <tr>
+            <th>等级</th>
+            <th>俗称</th>
+            <th>采摘标准</th>
+            <th>参考价格<br>（元/500g）</th>
+            <th>适合场景</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="grade-name">
+              特级一等
+              <span class="tag tag-premium">金毫茶</span>
+            </td>
+            <td>金毫</td>
+            <td>全芽头，金黄毫毛密布</td>
+            <td class="price">800-1500+</td>
+            <td>高端送礼、收藏</td>
+          </tr>
+          <tr>
+            <td class="grade-name">
+              特级二等
+              <span class="tag tag-gift">金毛毫</span>
+            </td>
+            <td>金毛毫</td>
+            <td>一芽一叶初展，毫毛多</td>
+            <td class="price">400-800</td>
+            <td>送礼、招待贵客<br><span style="font-size:10px;color:var(--text3);">2023中法元首松园茶叙同款</span></td>
+          </tr>
+          <tr>
+            <td class="grade-name">
+              一级
+            </td>
+            <td>金英红</td>
+            <td>一芽一叶，汤色红亮</td>
+            <td class="price">200-400</td>
+            <td>日常送礼、家庭品饮</td>
+          </tr>
+          <tr>
+            <td class="grade-name">
+              二级
+              <span class="tag tag-daily">口粮茶</span>
+            </td>
+            <td>英红九号</td>
+            <td>一芽二叶为主，口感醇厚</td>
+            <td class="price">150-200</td>
+            <td>日常饮用、办公室用茶</td>
+          </tr>
+          <tr>
+            <td class="grade-name">
+              三级
+            </td>
+            <td>—</td>
+            <td>一芽二三叶，滋味浓强</td>
+            奶茶基底、大宗用茶、工业用茶</td>
+            <td>奶茶基底、大宗用茶、工业用茶</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size:12px;color:var(--text3);padding:8px 8px 0;">
+        ⚠️ 以上为产地参考价格，品牌包装、季节、年份等因素会影响实际售价。
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="红茶攻略插图/英德茶芽.PNG" class="card-img" alt="英德茶芽">
+      <h3>从源头看懂价格：一斤干茶的成本构成</h3>
+      <p style="font-size:13px;color:var(--text2);margin-bottom:12px;">
+        英红九号一般 <strong>4.5–5 斤鲜叶 → 1 斤干茶</strong>。以下是各季节鲜叶采摘工费（数据来自本地采茶工行情）：
+      </p>
+      <table class="grade-table" style="margin-bottom:12px;">
+        <thead>
+          <tr>
+            <th>季节</th>
+            <th>采摘时间</th>
+            <th>鲜叶工费（元/斤）</th>
+            <th>折合干茶成本（元/斤）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>春茶</td>
+            <td>明前/头采，2–4 月</td>
+            <td>普通 8–15，高端 15–20</td>
+            <td class="price">约 50 元</td>
+          </tr>
+          <tr>
+            <td>夏茶</td>
+            <td>5–7 月</td>
+            <td>3–5</td>
+            <td class="price">约 15 元</td>
+          </tr>
+          <tr>
+            <td>秋茶</td>
+            <td>8–10 月</td>
+            <td>4–8</td>
+            <td class="price">约 20–40 元</td>
+          </tr>
+          <tr>
+            <td>冬茶</td>
+            <td>少量</td>
+            <td>5–10</td>
+            <td class="price">约 25–50 元</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size:12px;color:var(--text3);">
+        ⚠️ 以上仅为<strong>采摘人工成本</strong>。各个环节的人工成本占到了红茶总成本的 6–7 成，其中采摘工人占整个成本的约 30%。
+      </p>
+      <p style="font-size:12px;color:var(--text2);margin-top:6px;">
+        📊 <strong>英德市场茶青收购参考</strong>（据茶企老板介绍）：茶青最低收购价 8–10 元/斤，正常价约 15 元/斤。5 斤茶青约制 1 斤干茶，干茶加工成本约 20 元/斤，每斤微利 20–30 元。有机茶产量更低、成本更高——茶青成本约 35 元/斤，4 斤做 1 斤干茶，加上有机种植成本，有机茶的成本价去到 400 多元/斤。
+      </p>
+      <p style="font-size:12px;color:var(--text2);margin-top:6px;">
+        👨‍🌾 <strong>采茶工人收入</strong>：普通采茶工一月 2500–3000 元是常态，熟练工 3000–4000 元也很正常，最高记录一个月拿到过 5000 多元。春茶忙碌时节，一个劳动力一天最高可拿到 150 元。
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>常见踩坑案例</h3>
+      <ul>
+        <li><strong>夏秋茶 / 陈茶冒充春茶</strong>：用去年卖不完的夏茶、秋茶、粗老叶，重新包装当季春茶或金毛毫卖。抖音很多商家用这招刷销量、做虚假数据，是本地最常见的坑。</li>
+        <li><strong>「真包装，换内茶」调包</strong>：礼盒是英红、鸿雁等大厂正品，里面的茶叶被换成低价外地茶。特产店、导游店高发。</li>
+        <li><strong>景区、服务区的散装茶</strong>：溢价 2–3 倍是常态。</li>
+        <li><strong>年份越久越好？</strong>：不适用于红茶，建议 2 年内喝掉。</li>
+      </ul>
+      <p style="font-size:12px;color:var(--text3);margin-top:10px;">
+        💡 <strong>避坑技巧</strong>：线上买茶优先选择<strong>发货地是英德本地</strong>的电商店铺。外地发货的「英德红茶」风险更高。
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 3: Channels -->
+  <section class="section" id="channel">
+    <h2 class="section-title"><span class="dot"></span>购买渠道</h2>
+    <p class="section-desc">线上方便、线下放心，各有各的选法。</p>
+
+    <div class="channel-card online">
+      <h4>当地著名品牌</h4>
+      <img src="红茶攻略插图/英德红茶厂家.PNG" class="card-img" alt="英德红茶厂家品牌">
+      <p class="ch-desc">
+        天猫/京东搜索品牌名 → 官方旗舰店。认准以下品牌：
+      </p>
+      <ul style="font-size:13px;color:var(--text2);padding-left:18px;margin-top:6px;">
+        <li><strong>鸿雁</strong> — 广东省农科院茶叶研究所出品，英红九号标杆</li>
+        <li><strong>英红</strong> — 老牌国企背景，品质稳定，经典款多</li>
+        <li><strong>上茗轩</strong> — 专注高端，金毫/金毛毫口碑好</li>
+        <li><strong>红旗茶厂</strong> — 英德红茶发源地，历史底蕴深厚</li>
+        <li><strong>积庆里</strong> — 生态茶园规模大，产品线丰富</li>
+        <li><strong>九鼎红</strong> — 2026 年两会广东代表团专用茶，全茶园有机，性价比路线，适合入门</li>
+      </ul>
+      <p style="font-size:12px;color:var(--text3);margin-top:8px;">
+        优点：方便比价、售后有保障；缺点：不能先尝后买。
+      </p>
+    </div>
+
+    <div class="channel-card" style="border-left-color: #C90314;">
+      <h4>直播带货</h4>
+      <p class="ch-desc" style="margin-bottom:4px;">
+        抖音/快手/视频号直播间常见的「99 元 6 罐」「199 元礼盒装」英德红茶。
+      </p>
+      <p style="font-size:12px;color:#C90314;font-weight:500;">
+        ⚠️ 本地人基本不会买。这类茶的品质非常一般，往往是夏茶或外地仿冒茶充数，包装比茶贵。不是所有叫「英红九号」的都是好茶。
+      </p>
+    </div>
+
+    <div class="channel-card offline">
+      <h4>线下实体店</h4>
+      <p class="ch-desc">
+        <strong>百花市场门口一条街</strong>：英德市区最集中的茶叶档口聚集地，各种品牌、各种等级的茶都能找到，可以一家一家试喝比较。价格比景区便宜，比线上能现场品鉴。
+        注意：这里没有当地品牌的旗舰店，但档口老板往往跟茶厂关系很熟，能拿到好货。
+        <br>优点：能试喝、能看到实物；缺点：价格可能偏高，需要会讲价。
+      </p>
+    </div>
+
+    <div class="channel-card factory">
+      <h4>茶厂直购</h4>
+      <p class="ch-desc" style="margin-bottom:4px;">
+        大部分生产性茶厂不是景区，人流量不够，所以不太支持零售散客直接上门购买。
+      </p>
+      <p style="font-size:12px;color:var(--accent);font-weight:500;margin-bottom:6px;">
+        ⚠️ 出名的茶厂≈景区：积庆里茶厂、T3 茶厂、红旗茶厂，即使去到厂里买，价格跟市场差不多，并不会便宜太多。它们本质上是观光体验式消费。
+      </p>
+      <p class="ch-desc">
+        本地人买茶也不会直接去生产茶厂买，而是去熟悉的档口。真正想买高性价比的茶 → 见下方「本地人推荐」。
+      </p>
+    </div>
+
+    <div class="card" style="border:1px solid var(--green);background:var(--green-bg);">
+      <h3 style="color:var(--green);">本地人推荐购买方式</h3>
+      <p style="font-size:13px;color:var(--text);margin-bottom:8px;">
+        英德全市茶园面积 <strong>18.65 万亩</strong>，干茶年产量 <strong>1.83 万吨</strong>，汇聚近 <strong>900 家茶企</strong>、150 家茶叶合作社，<strong>15.5 万</strong>从业人员（英德总人口约 95 万，平均每 6 个人就有 1 个做茶）。本地人开玩笑说「随便出街买菜吃早餐都能遇到一个有茶园的茶老板」。
+      </p>
+      <p style="font-size:13px;color:var(--text);margin-bottom:8px;">
+        <strong>在英德，买到假英红九号的概率其实不高</strong>——它不像大红袍那样强调母株母树的概念。英红九号是政府与茶科所全市推广的经济作物，全英德的英红九号都是茶科所品种的子子孙孙。容易买到的不是假茶，是<strong>品质差的茶</strong>。
+      </p>
+      <p style="font-size:13px;color:var(--text);margin-bottom:8px;">
+        另一个冷知识：<strong>英红九号不强调核心产区</strong>。普通人基本喝不出产区区别，即使让专家来盲测也基本搞不清楚。不用为「核心产区」溢价买单。
+      </p>
+      <p style="font-size:13px;color:var(--text);margin-bottom:8px;">
+        <strong>本地人基本不买品牌茶。</strong>直接找个相熟的茶园老板买「日茶」（日常口粮茶），品质稳定、性价比高，不用担心喝到夏茶充春茶，更不会买到外地茶拼配的「拼茶」。
+      </p>
+      <p style="font-size:12px;color:var(--text2);">
+        怎么找靠谱的茶园老板？可以加我微信（见文末），我能帮你推荐。
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>不推荐的渠道</h3>
+      <p style="font-size:13px;color:var(--text2);">拼多多低价杂牌店——以次充好、临期翻新 / 高速服务区、景区门口散装茶 / 路边厂家直销临时摊 / 直播间低价茶</p>
+      <ul>
+        <li><strong>拼多多低价杂牌店</strong>：最容易以次充好、临期翻新，品质完全看运气</li>
+        
+        
+        
+        
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section 4: Quality Guide -->
+  <section class="section" id="quality">
+    <h2 class="section-title"><span class="dot"></span>挑选技巧</h2>
+    <p class="section-desc">小白也能用的「三步鉴别法」，买茶时照着看就行。</p>
+
+    <div class="tip-item">
+      <div class="tip-icon">👀</div>
+      <div class="tip-content">
+        <h4>第一步：看外形</h4>
+        <p>
+          好的英红九号条索紧结匀整，色泽乌润，金毫显露。
+          芽头越多、金毫越密，等级越高。如果条索松散、颜色发暗、碎末多，品质就差。
+        </p>
+      </div>
+    </div>
+
+    <div class="tip-item">
+      <div class="tip-icon">👃</div>
+      <div class="tip-content">
+        <h4>第二步：闻香气</h4>
+        <p>
+          干茶应有浓郁的甜香或花果香，没有霉味、陈味。
+          冲泡后香气高扬持久。如果闻起来有「青草味」或「酸味」，说明工艺有瑕疵。
+        </p>
+      </div>
+    </div>
+
+    <div class="tip-item">
+      <div class="tip-icon">👅</div>
+      <div class="tip-content">
+        <h4>第三步：品滋味</h4>
+        <p>
+          茶汤入口醇厚顺滑，回甘明显，不苦不涩。
+          好茶耐泡，一般能泡 6-8 泡仍有滋味。
+          如果第一泡就寡淡无味，或苦涩感重且化不开，质量不佳。
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h3>进阶：看茶汤</h3>
+      <img src="红茶攻略插图/红茶茶汤.PNG" class="card-img" alt="红茶茶汤金圈">
+      <p>
+        英红九号的茶汤应为红艳明亮，有「金圈」——即茶汤边缘有一圈金黄色的光圈。
+        金圈越明显，品质越好。如果茶汤浑浊发暗，说明发酵过度或储存不当。
+        
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 4.3: Brewing Guide -->
+  <section class="section" id="brew">
+    <h2 class="section-title"><span class="dot"></span>冲泡方法</h2>
+    <img src="红茶攻略插图/泡茶.PNG" class="card-img" alt="冲泡方法" style="display:block;margin:0 auto 20px;">
+    <p class="section-desc">世界高香红茶，泡对了才能喝到好味道。</p>
+
+    <div class="card">
+      <h3>选水</h3>
+      <p>选用天然泉水或纯净水，<strong>软水为宜</strong>。自来水含氯，会影响茶香。</p>
+    </div>
+
+    <div class="card">
+      <h3>择器</h3>
+      <p>推荐<strong>白瓷盖碗</strong>，有利于呈现红亮汤色。玻璃公道杯观色，白瓷品茗杯品味。</p>
+    </div>
+
+    <div class="card">
+      <img src="红茶攻略插图/红茶茶渣.PNG" class="card-img" alt="红茶茶渣">
+      <h3>冲泡三要素</h3>
+
+      <div style="margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--border);">
+        <h4 style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:4px;">茶量</h4>
+        <p style="font-size:13px;color:var(--text2);">
+          茶水比以 <strong>1:30</strong> 为宜，即 5 克干茶加入 150ml 水。
+        </p>
+      </div>
+
+      <div style="margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--border);">
+        <h4 style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:4px;">水温</h4>
+        <p style="font-size:13px;color:var(--text2);">
+          根据茶叶等级调整：<br>
+          <strong>特级一等（金毫茶）</strong>：85°C<br>
+          <strong>特级二等（金毛毫）</strong>：85–90°C<br>
+          <strong>一级及以下</strong>：95°C 以上<br>
+          英德红茶是世界高香红茶，<strong>水温高则香气扬，水温低则鲜味佳</strong>。
+        </p>
+      </div>
+
+      <div>
+        <h4 style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:4px;">出汤时间</h4>
+        <p style="font-size:13px;color:var(--text2);">
+          英德红茶内含物溶解快，出汤很快：<br>
+          前 3 泡：<strong>3–5 秒</strong>即出汤<br>
+          之后每泡延长 1–2 秒，<strong>最长不超过 9 秒</strong><br>
+          好茶不用洗茶，第一泡就是精华。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4.5: Insider Stories -->
+  <section class="section" id="insider">
+    <h2 class="section-title"><span class="dot"></span>行业内幕</h2>
+    <p class="section-desc">在英德生活这么多年，汇总了很多茶园老板的行业内幕。这些事，不会写在包装上。</p>
+
+    <div class="card">
+      <h3>1. 有机认证可以「拆分」</h3>
+      <p>
+        正常人听到某品牌宣传有机茶，会以为他家整片茶园都是有机的。<br><br>
+        但事实是：有机的认证单元是<strong>可以拆分的</strong>。老板可以将茶园划分为「有机区」与「常规区」，分开管理、分开认证。他在重点宣传有机茶的同时，有机区可能只占了很小一部分。<br><br>
+        在广东英德 18 万亩茶园里，<strong>真正能做到全园有机的，寥寥无几</strong>。
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>2. 早春茶的真相</h3>
+      <img src="红茶攻略插图/鲜茶叶.PNG" class="card-img" alt="鲜茶叶">
+      <p>
+        每年春茶季前，英德往往经历一段干旱期，茶园缺水，茶树生长缓慢。但与此同时，市面上却已经有「早春茶」在售卖了。<br><br>
+        这背后的原因是：那些早上市的茶芽，大多是靠<strong>人工灌溉催出来的</strong>——水分充足，生长就快。而等雨水的茶园，茶树生长慢，但水分自然温和，<strong>茶叶内含物更足</strong>，茶味更浓。<br><br>
+        不大水漫灌的茶，上市晚、产量少，但品质更好。催出来的早春茶虽然抢了市场先机，味道偏淡。
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>3. 品牌茶不只靠自家茶园</h3>
+      <p>
+        有些大品牌茶企，不全是自家茶园的茶，有时候还会收购茶农的茶来拼配。这也是为什么本地人更愿意直接找茶园老板买——你知道茶来自哪片山头、哪位师傅的手，而不只是一个牌子。
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 5: Gift Guide -->
+  <section class="section" id="gift">
+    <h2 class="section-title"><span class="dot"></span>送礼指南</h2>
+    <p class="section-desc">不同预算、不同对象，照着选就行。</p>
+
+    <img src="红茶攻略插图/英红九号包装.PNG" style="width:100%;max-width:600px;display:block;margin:0 auto 16px;border-radius:8px;" alt="英红九号包装">
+
+    <div class="gift-grid">
+      <div class="gift-card">
+        <div class="gift-budget">150-200</div>
+        <div class="gift-for">日常伴手礼 / 普通朋友 / 自喝</div>
+        <div class="gift-suggest">
+          选英红九号等级，挑包装精致的小罐装或礼盒装。
+          
+        </div>
+      </div>
+      <div class="gift-card">
+        <div class="gift-budget">200-500</div>
+        <div class="gift-for">送长辈 / 送同事 / 自喝</div>
+        <div class="gift-suggest">
+          二轮春茶性价比高，金英红或金毛毫，礼盒大气，附赠品鉴指南更佳。
+          
+        </div>
+      </div>
+      <div class="gift-card">
+        <div class="gift-budget">500-1000</div>
+        <div class="gift-for">送领导 / 重要客户</div>
+        <div class="gift-suggest">
+          花果香更突出，芽头含量更高，金毛毫或金毫，精美礼盒，注意品牌和包装档次。
+          
+        </div>
+      </div>
+      <div class="gift-card">
+        <div class="gift-budget">1000+</div>
+        <div class="gift-for">高端商务 / 收藏级</div>
+        <div class="gift-suggest">
+          选金毫级别，限量版或纪念版礼盒，配上收藏证书更佳。
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:12px;">
+      <h3>包装选择建议</h3>
+      <ul>
+        <li>铁罐装：密封性好，日常送礼首选；纸盒礼盒：适合节日送礼，但密封性一般；散装/袋装：不建议送礼</li>
+        
+        
+        <li>注意生产日期，红茶不宜送陈茶，明前茶最贵，夏茶最便宜，秋茶性价比高。自喝选春茶或秋茶，送礼选明前茶。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section 6: FAQ -->
+  <section class="section" id="faq">
+    <h2 class="section-title"><span class="dot"></span>常见问题</h2>
+    <p class="section-desc">被问得最多的问题，一次性回答清楚。</p>
+
+    <div class="card">
+      <div class="faq-item open">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          网上直播 99 元 9 罐的英红九号是真的吗？
+          <span class="faq-arrow">▾</span>
+        </div>
+        <div class="faq-a">
+          大概率是<strong>真的英红九号</strong>——但不是好茶。<br><br>
+          英红九号产量很大，造假的成本和几率很低。低价茶通常不是假茶，而是：<br>
+          ① <strong>大量夏茶</strong>：夏天茶叶产量非常大，但茶味非常淡，本地人基本不喝夏茶，有些茶园老板也绝不卖夏茶。<br>
+          ② <strong>去年剩的旧茶、老茶</strong>：去其他茶农那里收上来没卖完的，或者处理的陈茶。<br><br>
+          ⚠️ 还要看看罐子有多大——99 元 9 罐，加起来可能 300 克都不到，算下来一斤也要一百多，并不便宜。<br><br>
+          💡 我个人建议：<strong>可以买来试一下</strong>，我自己也买过。99 元买个吃亏买个上当问题不大。但怕就怕这 99 元形成了你对英红九号的固定认知——以为英红九号就是最差的夏茶味道，而你永远喝不到真正英红九号好茶的味道。
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          春茶和秋茶怎么选？
+          <span class="faq-arrow">▾</span>
+        </div>
+        <div class="faq-a">
+          春茶（2-4月采摘，明前/头采）：香气清雅、滋味鲜爽、耐泡度高，品质最好。春茶鲜叶工费 8-20 元/斤，折合干茶仅采摘成本就约 50 元/斤，所以售价最高。<br>
+          夏茶（5-7月）：产量大但品质一般，工费仅 3-5 元/斤，适合做奶茶基底或大宗茶，不建议送礼。<br>
+          秋茶（8-10月）：品质回升，香气浓郁，性价比高，适合做口粮茶。<br>
+          一般建议：送礼选春茶，自己喝选秋茶，夏茶不要碰。<br>
+          
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          英德红茶怎么保存？
+          <span class="faq-arrow">▾</span>
+        </div>
+        <div class="faq-a">
+          红茶不需要放冰箱。密封、避光、防潮、无异味即可。<br>
+          建议用锡罐或密封铁罐存放，放在阴凉干燥处。<br>
+          开封后尽量在 3-6 个月内喝完，风味最佳。
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          英德红茶值得收藏吗？
+          <span class="faq-arrow">▾</span>
+        </div>
+        <div class="faq-a">
+          英德红茶是全发酵大叶种红茶，和普洱（后发酵）不一样：<br>
+          ✅ <strong>可以放、会转化</strong>：新茶花果蜜香 → 存放 2–5 年转为枣香、木质香、陈香，茶汤更醇厚、甜润，刺激性降低。<br>
+          ⚠️ <strong>不是越老越好</strong>：最佳品饮期 2–5 年；超过 7 年香气明显掉、滋味变淡，再久易寡淡甚至酸败。<br>
+          一句话：喜欢喝可以存点，别当投资。
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          什么时候买最划算？
+          <span class="faq-arrow">▾</span>
+        </div>
+        <div class="faq-a">
+          春茶（2–4 月）刚上市时价格最高，因为品质最好、需求最旺。<br>
+          想喝好茶 → 春茶季买新茶，尝鲜但不求便宜。<br>
+          想性价比 → <strong>5–6 月之后</strong>春茶热度回落、秋茶上市前，是捡漏的好时机。<br>
+          想囤口粮茶 → <strong>秋茶季（9–10 月）</strong>，品质回升但价格比春茶低一截。<br>
+          另外，<strong>双十一、年货节</strong>等大促节点，品牌旗舰店通常有折扣，线上买茶的好时机。
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          第一次买英德红茶，推荐什么？
+          <span class="faq-arrow">▾</span>
+        </div>
+        <div class="faq-a">
+          推荐从 <strong>二级英红九号（口粮茶）</strong> 入手，80–200 元/斤，价格不贵、品质稳定，先建立对英红九号「浓强鲜爽」味道的正确认知。<br><br>
+          品牌上选 <strong>鸿雁或英红</strong> 的入门款——前者是茶科所出品，品质标准；后者是国企老牌，品控稳。<br><br>
+          ⚠️ 别一上来就买 99 元 9 罐的直播茶——那是夏茶的味道，不是英红九号该有的味道。先喝对，再喝好。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: About + Lead Gen -->
+  <section class="about-section">
+    <h2 class="about-title">关于我</h2>
+    <p class="about-desc">
+      我是<b>英德美食猫</b>，一个在英德生活了几十年的本地人。
+      写这份攻略是因为太多朋友来问「红茶怎么买」，
+      干脆一次性写清楚。内容会持续更新，有问题欢迎交流。
+    </p>
+
+    <img src="英德美食猫微信号.jpg" alt="英德美食猫微信二维码" style="width:180px;height:180px;border-radius:12px;margin-bottom:12px;">
+
+    <p style="font-size:13px;color:var(--text2);margin-bottom:6px;">
+      📱 英德吃喝玩乐，找英德美食猫<br>微信公众号 & 小红书搜索：英德美食猫
+    </p>
+    <p style="font-size:12px;color:var(--text2);margin-bottom:4px;">
+      记得常看我的小红书，那里有我生活在本地几十年的美食好店推荐
+    </p>
+    <p style="font-size:11px;color:var(--text3);margin-bottom:8px;">
+      来英德旅游前先看看，绝对不会踩坑
+    </p>
+    <p style="font-size:12px;color:var(--text3);margin-bottom:16px;">
+      微信号：英德美食猫
+    </p>
+
+    <div class="social-links">
+      <span class="social-link social-wechat">微信：英德美食猫</span>
+      <span class="social-link social-xiaohongshu">小红书：英德美食猫</span>
+    </div>
+
+    <img src="美食猫小红书主页.png" alt="英德美食猫小红书主页" style="width:100%;max-width:360px;border-radius:12px;margin-top:20px;">
+  </section>
+
+  <footer class="footer">
+    英德红茶购买攻略 · by 英德美食猫 · 持续更新中 · 2026年5月
+  </footer>
+
+  <section style="max-width:680px;margin:0 auto;padding:0 16px 40px;">
+    <h3 style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:12px;">参考资料</h3>
+    <ul style="font-size:12px;color:var(--text3);padding-left:18px;line-height:2;">
+      <li>英德市人民政府 — 茶叶产品质量安全监管：<br><a href="http://www.yingde.gov.cn/zljs/zdlyxxgk/cpzljgzf/content/post_1753370.html" style="color:var(--text3);">yingde.gov.cn/zljs/zdlyxxgk/cpzljgzf</a></li>
+      <li>英德市人民政府 — 夏秋茶冒充春茶监管动态：<br><a href="http://www.yingde.gov.cn/zwgk/zwdt/bmdt/content/post_1950176.html" style="color:var(--text3);">yingde.gov.cn/zwgk/zwdt/bmdt</a></li>
+      <li>南方+ — 夏秋茶/粗老叶冒充春茶金毛毫：<br><a href="https://static.nfnews.com/content/202404/29/c8831965.html" style="color:var(--text3);">static.nfnews.com/content/202404/29/c8831965</a></li>
+      <li>南方网 — 英德红茶成本与人工调研：<br><a href="https://static.nfapp.southcn.com/content/201804/04/c1072082.html" style="color:var(--text3);">static.nfapp.southcn.com/content/201804/04/c1072082</a></li>
+    </ul>
+  </section>
+
+</div>
+
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+// Smooth scroll + active nav
+document.querySelectorAll('.nav-sections a').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const id = a.getAttribute('href');
+    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+// Scroll spy
+const sections = document.querySelectorAll('.section, .about-section');
+const navLinks = document.querySelectorAll('.nav-sections a');
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 120) current = s.id;
+  });
+  navLinks.forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
+  const about = document.querySelector('.about-section');
+  if (window.scrollY + window.innerHeight >= document.body.scrollHeight - 100) {
+    navLinks.forEach(a => a.classList.remove('active'));
+  }
+  // Back to top visibility
+  backToTop.classList.toggle('visible', window.scrollY > 400);
+});
+</script>
+
+</body>
+</html>
