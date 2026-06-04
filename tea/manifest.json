@@ -1,0 +1,26 @@
+{
+  "name": "英德红茶购买攻略",
+  "short_name": "英德红茶攻略",
+  "description": "英德本地人写的英德红茶购买攻略，涵盖英红九号等级价格、渠道、送礼指南",
+  "start_url": "/tea/",
+  "scope": "/tea/",
+  "display": "standalone",
+  "background_color": "#FFFAFA",
+  "theme_color": "#C90314",
+  "orientation": "portrait-primary",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "/tea/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/tea/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yingzaoshe.cn/sitemap.xml
