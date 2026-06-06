@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>英德住宿推荐 | 温泉酒店、民宿、度假村全攻略 · 英造社</title>
+<meta name="description" content="英德住宿全攻略：温泉酒店、精品民宿、度假村、市区酒店推荐。树上温泉、宝墩湖、野渡谷……本地人整理，含价格、特色、预订建议。">
+<meta name="keywords" content="英德住宿,英德酒店,英德民宿,英德温泉,宝墩湖,九州驿站,野渡谷,英德度假村">
+<meta name="author" content="英造社">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://yingzaoshe.cn/stay/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="英德住宿推荐 | 温泉酒店、民宿、度假村">
+<meta property="og:description" content="英德住宿全攻略，本地人整理推荐。">
+<meta property="og:url" content="https://yingzaoshe.cn/stay/">
+<meta property="og:site_name" content="英造社">
+<meta property="og:locale" content="zh_CN">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="/favicon_logosc/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon_logosc/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon_logosc/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon_logosc/apple-touch-icon.png">
+
+<!-- Theme -->
+<meta name="theme-color" content="#C90314">
+
+<style>
+:root {
+  --bg: #FFFAFA;
+  --card: #FFFFFF;
+  --text: #3D2B1F;
+  --text2: #8B7355;
+  --text3: #B8A088;
+  --accent: #C90314;
+  --accent-light: #E05050;
+  --gold: #D46070;
+  --gold-light: #FFF0F0;
+  --border: #F0E0E0;
+  --green: #5B8C5A;
+  --green-bg: #EDF5EC;
+  --amber: #D4922A;
+  --amber-bg: #FFF8E8;
+  --blue: #4A90A4;
+  --blue-bg: #E8F4F8;
+  --purple: #8B5A9F;
+  --purple-bg: #F5EEF8;
+  --radius: 12px;
+  --shadow: 0 1px 3px rgba(61,43,31,0.04);
+  --shadow-md: 0 2px 8px rgba(61,43,31,0.06);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ===== NAV ===== */
+.top-nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  background: rgba(255,250,250,0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+  padding: 10px 0;
+}
+.nav-inner {
+  max-width: 680px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16px;
+}
+.nav-logo {
+  font-size: 18px; font-weight: 600; color: var(--accent);
+  text-decoration: none;
+}
+.nav-back {
+  font-size: 14px; color: var(--text2);
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+.nav-back:hover {
+  background: var(--gold-light); color: var(--accent);
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding: 80px 0 40px;
+  text-align: center;
+}
+.hero-icon { font-size: 48px; margin-bottom: 12px; }
+.hero h1 {
+  font-size: 30px; font-weight: 700;
+  color: var(--accent); margin-bottom: 8px;
+}
+.hero .subtitle {
+  font-size: 16px; color: var(--text2);
+  margin-bottom: 20px;
+}
+.hero-badges {
+  display: flex; justify-content: center; gap: 10px;
+  flex-wrap: wrap;
+}
+.hero-badge {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 20px; padding: 5px 12px;
+  font-size: 13px; color: var(--text2);
+}
+
+/* ===== QUICK NAV ===== */
+.quick-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.quick-nav a {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 13px;
+  color: var(--text2);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.quick-nav a:hover {
+  background: var(--gold-light);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ===== SECTION ===== */
+.section {
+  padding: 32px 0;
+}
+.section-title {
+  font-size: 22px; font-weight: 700;
+  color: var(--accent); margin-bottom: 8px;
+  display: flex; align-items: center; gap: 8px;
+}
+.section-title .dot {
+  width: 8px; height: 8px;
+  border-radius: 50%; background: var(--accent); flex-shrink: 0;
+}
+.section-desc {
+  font-size: 15px; color: var(--text2);
+  margin-bottom: 20px;
+}
+
+/* ===== STAY CARD ===== */
+.stay-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 16px;
+  transition: all 0.2s;
+}
+.stay-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+}
+.stay-card.featured {
+  border: 2px solid var(--gold);
+  background: linear-gradient(135deg, var(--gold-light) 0%, #fff 100%);
+}
+.stay-header {
+  display: flex; align-items: flex-start; gap: 12px;
+  margin-bottom: 12px;
+}
+.stay-icon {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: var(--gold-light);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+.stay-info { flex: 1; }
+.stay-info h3 {
+  font-size: 18px; font-weight: 600;
+  color: var(--text); margin-bottom: 4px;
+}
+.stay-tags {
+  display: flex; gap: 6px; flex-wrap: wrap;
+}
+.stay-tag {
+  font-size: 11px; padding: 2px 8px;
+  border-radius: 10px;
+}
+.tag-hot { background: var(--gold-light); color: var(--accent); }
+.tag-family { background: var(--blue-bg); color: var(--blue); }
+.tag-couple { background: var(--purple-bg); color: var(--purple); }
+.tag-budget { background: var(--green-bg); color: var(--green); }
+.tag-luxury { background: var(--amber-bg); color: var(--amber); }
+
+.stay-body {
+  font-size: 15px; color: var(--text2);
+  line-height: 1.8;
+}
+.stay-body p {
+  margin-bottom: 8px;
+}
+.stay-meta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.meta-item {
+  font-size: 13px; color: var(--text2);
+}
+.meta-item strong {
+  color: var(--text); font-weight: 600;
+}
+.meta-item .price {
+  color: var(--accent); font-weight: 600;
+}
+
+/* ===== COMPARE TABLE ===== */
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 14px;
+}
+.compare-table th,
+.compare-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+.compare-table th {
+  background: var(--gold-light);
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 13px;
+}
+.compare-table td {
+  color: var(--text2);
+}
+.compare-table tr:hover td {
+  background: var(--bg);
+}
+
+/* ===== TIPS CARD ===== */
+.tips-card {
+  background: linear-gradient(135deg, var(--green-bg) 0%, #fff 100%);
+  border: 1px solid var(--green);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin: 20px 0;
+}
+.tips-card h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--green); margin-bottom: 12px;
+}
+.tips-card ul {
+  padding-left: 18px;
+  font-size: 15px; color: var(--text2);
+}
+.tips-card li {
+  margin-bottom: 6px;
+}
+
+/* ===== ABOUT ===== */
+.about-section {
+  text-align: center; padding: 40px 0 60px;
+}
+.about-section h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--accent); margin-bottom: 8px;
+}
+.about-section p {
+  font-size: 15px; color: var(--text2);
+  max-width: 400px; margin: 0 auto 20px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center; padding: 24px 0;
+  border-top: 1px solid var(--border);
+  font-size: 14px; color: var(--text3);
+}
+
+/* ===== BACK TO TOP ===== */
+.back-to-top {
+  position: fixed; bottom: 24px; right: 20px;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--accent); color: #fff;
+  border: none; font-size: 20px;
+  cursor: pointer; z-index: 99;
+  opacity: 0; transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
+  box-shadow: 0 2px 8px rgba(61,43,31,0.2);
+  display: flex; align-items: center; justify-content: center;
+}
+.back-to-top.visible {
+  opacity: 1; transform: translateY(0);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 480px) {
+  .hero h1 { font-size: 26px; }
+  .section-title { font-size: 20px; }
+  .stay-meta { grid-template-columns: 1fr; }
+  .compare-table { font-size: 12px; }
+  .compare-table th, .compare-table td { padding: 8px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="top-nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">英造社</a>
+    <a href="/" class="nav-back">← 返回首页</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-icon">🏡</div>
+    <h1>英德住宿推荐</h1>
+    <p class="subtitle">从树上温泉到田园民宿，找到属于你的那一晚</p>
+    <div class="hero-badges">
+      <span class="hero-badge">温泉酒店</span>
+      <span class="hero-badge">精品民宿</span>
+      <span class="hero-badge">度假村</span>
+      <span class="hero-badge">市区酒店</span>
+    </div>
+  </section>
+
+  <!-- Quick Nav -->
+  <div class="quick-nav">
+    <a href="#hot">热门推荐</a>
+    <a href="#hotel">温泉酒店</a>
+    <a href="#homestay">精品民宿</a>
+    <a href="#city">市区住宿</a>
+    <a href="#compare">对比指南</a>
+    <a href="#tips">预订贴士</a>
+  </div>
+
+  <!-- Featured -->
+  <section class="section" id="hot">
+    <h2 class="section-title"><span class="dot"></span>热门推荐</h2>
+    <p class="section-desc">英德最有特色的住宿体验，闭眼选都不会错。</p>
+
+    <div class="stay-card featured">
+      <div class="stay-header">
+        <div class="stay-icon">♨️</div>
+        <div class="stay-info">
+          <h3>九州驿站·树上温泉</h3>
+          <div class="stay-tags">
+            <span class="stay-tag tag-hot">最推荐</span>
+            <span class="stay-tag tag-couple">情侣</span>
+            <span class="stay-tag tag-family">亲子</span>
+          </div>
+        </div>
+      </div>
+      <div class="stay-body">
+        <p>英德最独特的住宿体验！树屋建在森林树冠之间，晚上听着虫鸣鸟叫入睡，早上被阳光和鸟鸣唤醒。</p>
+        <p><strong>树上温泉</strong>是最大亮点——在原始森林的树冠之间搭建温泉池，一边泡温泉一边听鸟鸣、看星空。冷空气配热温泉，绝了。</p>
+        <p>适合：情侣、亲子、想逃离城市的人。不适合：对住宿条件要求极高的人（树屋设施相对简单）。</p>
+      </div>
+      <div class="stay-meta">
+        <div class="meta-item"><strong>价格：</strong><span class="price">300-800 元/晚</span></div>
+        <div class="meta-item"><strong>位置：</strong>石牯塘镇</div>
+        <div class="meta-item"><strong>特色：</strong>树上温泉 + 树屋</div>
+        <div class="meta-item"><strong>预订：</strong>提前1-2周，冬季需更早</div>
+      </div>
+    </div>
+
+    <div class="stay-card featured">
+      <div class="stay-header">
+        <div class="stay-icon">🏊</div>
+        <div class="stay-info">
+          <h3>宝墩湖温泉度假村</h3>
+          <div class="stay-tags">
+            <span class="stay-tag tag-hot">热门</span>
+            <span class="stay-tag tag-family">亲子首选</span>
+          </div>
+        </div>
+      </div>
+      <div class="stay-body">
+        <p>英德最火的度假村，<strong>后院直通泳池</strong>的设计是最大卖点。房间推开窗就是泳池，夏天泡一整天太爽了。</p>
+        <p>设施新、服务好，有儿童游乐区，非常适合带孩子的家庭。也有温泉池，冬天来也能泡温泉。</p>
+      </div>
+      <div class="stay-meta">
+        <div class="meta-item"><strong>价格：</strong><span class="price">400-1000 元/晚</span></div>
+        <div class="meta-item"><strong>位置：</strong>望埠镇</div>
+        <div class="meta-item"><strong>特色：</strong>泳池别墅 + 亲子</div>
+        <div class="meta-item"><strong>预订：</strong>旺季提前2周</div>
+      </div>
+    </div>
+
+    <div class="stay-card featured">
+      <div class="stay-header">
+        <div class="stay-icon">📸</div>
+        <div class="stay-info">
+          <h3>野渡谷民宿</h3>
+          <div class="stay-tags">
+            <span class="stay-tag tag-hot">网红</span>
+            <span class="stay-tag tag-couple">情侣</span>
+          </div>
+        </div>
+      </div>
+      <div class="stay-body">
+        <p>英德最火的<strong>网红民宿</strong>，设计感很强，每个角落都能出片。位于英西峰林核心区，窗外就是峰林景观。</p>
+        <p>房间不多，但每间都有独特设计。有公共露台和茶室，适合发呆、拍照、喝咖啡。</p>
+      </div>
+      <div class="stay-meta">
+        <div class="meta-item"><strong>价格：</strong><span class="price">400-800 元/晚</span></div>
+        <div class="meta-item"><strong>位置：</strong>英西峰林核心区</div>
+        <div class="meta-item"><strong>特色：</strong>设计感 + 峰林景观</div>
+        <div class="meta-item"><strong>预订：</strong>需提前预订，周末紧张</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hot Spring Hotels -->
+  <section class="section" id="hotel">
+    <h2 class="section-title"><span class="dot"></span>温泉酒店</h2>
+    <p class="section-desc">英德的温泉是天然温泉，泡完皮肤滑滑的。</p>
+
+    <div class="stay-card">
+      <div class="stay-header">
+        <div class="stay-icon">♨️</div>
+        <div class="stay-info">
+          <h3>奇洞温泉度假村</h3>
+          <div class="stay-tags">
+            <span class="stay-tag tag-luxury">高端</span>
+            <span class="stay-tag tag-family">亲子</span>
+          </div>
+        </div>
+      </div>
+      <div class="stay-body">
+        <p>老牌温泉度假村，温泉池种类多，有室内也有室外。设施相对旧一点，但温泉水质好，性价比高。</p>
+      </div>
+      <div class="stay-meta">
+        <div class="meta-item"><strong>价格：</strong><span class="price">300-600 元/晚</span></div>
+        <div class="meta-item"><strong>位置：</strong>英德市区附近</div>
+        <div class="meta-item"><strong>特色：</strong>溶洞温泉</div>
+        <div class="meta-item"><strong>适合：</strong>家庭、性价比党</div>
+      </div>
+    </div>
+
+    <div class="stay-card">
+      <div class="stay-header">
+        <div class="stay-icon">🏔️</div>
+        <div class="stay-info">
+          <h3>香溪谷温泉</h3>
+          <div class="stay-tags">
+            <span class="stay-tag tag-couple">情侣</span>
+            <span class="stay-tag tag-luxury">高端</span>
+          </div>
+        </div>
+      </div>
+      <div class="stay-body">
+        <p>环境清幽，温泉池散落在山谷之间，私密性好。适合情侣或想安静度假的人。</p>
+      </div>
+      <div class="stay-meta">
+        <div class="meta-item"><strong>价格：</strong><span class="price">400-800 元/晚</span></div>
+        <div class="meta-item"><strong>位置：</strong>英西峰林附近</div>
+        <div class="meta-item"><strong>特色：</strong>山谷温泉 + 私密</div>
+        <div class="meta-item"><strong>适合：</strong>情侣、安静度假</div>
+      </div>
+    </div>
+
+    <div class="stay-card">
+      <div class="stay-header">
+        <div class="stay-icon">🏨</div>
+        <div class="stay-info">
+          <h3>奥园别墅</h3>
+          <div class="stay-tags">
+            <span class="stay-tag tag-family">团建</span>
+            <span class="stay-tag tag-luxury">高端</span>
+          </div>
+        </div>
+      </div>
+      <div class="stay-body">
+        <p>独栋别墅，适合<strong>团建或几家人一起住</strong>。有私人温泉池、KTV、麻将房，设施齐全。</p>
+      </div>
+      <div class="stay-meta">
+        <div class="meta-item"><strong>价格：</strong><span class="price">1500-3000 元/栋/晚</span></div>
+        <div class="meta-item"><strong>位置：</strong>英德市区附近</div>
+        <div class="meta-item"><strong>特色：</strong>独栋别墅 + 私人温泉</div>
+        <div class="meta-item"><strong>适合：</strong>团建、大家庭</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Homestay -->
+  <section class="section" id="homestay">
+    <h2 class="section-title"><span class="dot"></span>精品民宿</h2>
+    <p class="section-desc">想体验当地生活？民宿是最好的选择。</p>
+
+    <div class="stay-card">
+      <div class="stay-header">
+        <div class="stay-icon">🌾</div>
+        <div class="stay-info">
+          <h3>云水谣民宿</h3>
+          <div class="stay-tags">
+            <span class="stay-tag tag-couple">文艺</span>
+            <span class="stay-tag tag-budget">性价比</span>
+          </div>
+        </div>
+      </div>
+      <div class="stay-body">
+        <p>位于英西峰林核心区，环境安静，老板热情。房间干净，窗外就是田园风光。价格亲民，适合长住。</p>
+      </div>
+      <div class="stay-meta">
+        <div class="meta-item"><strong>价格：</strong><span class="price">200-400 元/晚</span></div>
+        <div class="meta-item"><strong>位置：</strong>英西峰林</div>
+        <div class="meta-item"><strong>特色：</strong>田园风光 + 安静</div>
+        <div class="meta-item"><strong>适合：</strong>文艺青年、长住</div>
+      </div>
+    </div>
+
+    <div class="stay-card">
+      <div class="stay-header">
+        <div class="stay-icon">🏡</div>
+        <div class="stay-info">
+          <h3>英西峰林民宿群</h3>
+          <div class="stay-tags">
+            <span class="stay-tag tag-budget">性价比</span>
+            <span class="stay-tag tag-family">家庭</span>
+          </div>
+        </div>
+      </div>
+      <div class="stay-body">
+        <p>英西峰林沿途有很多民宿，价格从100到500不等。建议到了当地再挑，看哪家顺眼住哪家。大部分都干净卫生，老板会推荐周边玩法。</p>
+      </div>
+      <div class="stay-meta">
+        <div class="meta-item"><strong>价格：</strong><span class="price">100-500 元/晚</span></div>
+        <div class="meta-item"><strong>位置：</strong>九龙镇、黄花镇</div>
+        <div class="meta-item"><strong>特色：</strong>选择多、价格实惠</div>
+        <div class="meta-item"><strong>适合：</strong>背包客、自由行</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- City Hotels -->
+  <section class="section" id="city">
+    <h2 class="section-title"><span class="dot"></span>市区住宿</h2>
+    <p class="section-desc">交通便利，吃宵夜方便，性价比高。</p>
+
+    <div class="stay-card">
+      <div class="stay-header">
+        <div class="stay-icon">🏢</div>
+        <div class="stay-info">
+          <h3>市区连锁酒店</h3>
+          <div class="stay-tags">
+            <span class="stay-tag tag-budget">性价比</span>
+            <span class="stay-tag tag-family">便利</span>
+          </div>
+        </div>
+      </div>
+      <div class="stay-body">
+        <p>英德市区有很多连锁酒店（如7天、如家、汉庭等），价格亲民，设施标准化。离高铁站近，吃宵夜方便，适合预算有限或只住一晚的游客。</p>
+      </div>
+      <div class="stay-meta">
+        <div class="meta-item"><strong>价格：</strong><span class="price">120-180 元/晚</span></div>
+        <div class="meta-item"><strong>位置：</strong>英德市区</div>
+        <div class="meta-item"><strong>特色：</strong>交通便利 + 吃宵夜方便</div>
+        <div class="meta-item"><strong>适合：</strong>预算有限、短期停留</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compare -->
+  <section class="section" id="compare">
+    <h2 class="section-title"><span class="dot"></span>住宿对比指南</h2>
+    <p class="section-desc">不知道选哪个？看这个对比表。</p>
+
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>住宿类型</th>
+          <th>价格区间</th>
+          <th>适合人群</th>
+          <th>优缺点</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>树上温泉</strong></td>
+          <td>300-800元</td>
+          <td>情侣、亲子</td>
+          <td>体验独特，但设施简单</td>
+        </tr>
+        <tr>
+          <td><strong>宝墩湖</strong></td>
+          <td>400-1000元</td>
+          <td>亲子家庭</td>
+          <td>设施新，但旺季人多</td>
+        </tr>
+        <tr>
+          <td><strong>野渡谷</strong></td>
+          <td>400-800元</td>
+          <td>情侣、拍照</td>
+          <td>设计感强，但房间少</td>
+        </tr>
+        <tr>
+          <td><strong>温泉酒店</strong></td>
+          <td>300-600元</td>
+          <td>家庭、老人</td>
+          <td>性价比高，但设施较旧</td>
+        </tr>
+        <tr>
+          <td><strong>民宿</strong></td>
+          <td>100-500元</td>
+          <td>背包客、自由行</td>
+          <td>价格实惠，但品质参差</td>
+        </tr>
+        <tr>
+          <td><strong>市区酒店</strong></td>
+          <td>120-180元</td>
+          <td>预算有限</td>
+          <td>交通便利，但无特色</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Tips -->
+  <section class="section" id="tips">
+    <div class="tips-card">
+      <h3>🏨 英德住宿预订贴士</h3>
+      <ul>
+        <li><strong>提前预订：</strong>英德的特色住宿（树上温泉、野渡谷等）房间不多，周末和节假日建议提前1-2周预订。</li>
+        <li><strong>冬季温泉旺季：</strong>12月-2月是温泉旺季，价格会上涨，且房间紧张，建议提前1个月预订。</li>
+        <li><strong>比价渠道：</strong>建议同时在携程、美团、飞猪比价，有时候同一间房价格差几十块。</li>
+        <li><strong>民宿注意：</strong>英西峰林的民宿品质参差，建议看评价再订，或者到了当地再挑。</li>
+        <li><strong>位置选择：</strong>玩英西峰林住英西，玩市区/宝晶宫住市区，别来回跑浪费时间。</li>
+        <li><strong>别墅预订：</strong>奥园别墅适合几家人或团建，分摊下来人均不贵，但需提前确认设施是否完好。</li>
+        <li><strong>取消政策：</strong>预订前看清取消政策，英德天气多变，万一行程有变能减少损失。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about-section">
+    <h2>关于英造社</h2>
+    <p>
+      英德首家本土原创文化创意品牌，专注挖掘英德非遗历史和百亿产业，为游客提供最地道的英德旅游指南。
+    </p>
+    <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;">
+      <a href="/food/" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:20px;background:var(--green-bg);color:var(--green);text-decoration:none;font-size:14px;font-weight:500;">← 上一篇：地道美食</a>
+      <a href="/" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:20px;background:var(--gold-light);color:var(--accent);text-decoration:none;font-size:14px;font-weight:500;">返回首页</a>
+      <a href="/guide/" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:20px;background:var(--blue-bg);color:var(--blue);text-decoration:none;font-size:14px;font-weight:500;">下一篇：游玩攻略 →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    英德住宿推荐 · 英造社整理 · 持续更新中 · 2026年6月
+  </footer>
+
+</div>
+
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  backToTop.classList.toggle('visible', window.scrollY > 400);
+});
+</script>
+
+</body>
+</html>

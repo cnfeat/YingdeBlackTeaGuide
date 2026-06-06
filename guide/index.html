@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>英德游玩攻略 | 交通出行、四季玩法、路线规划 · 英造社</title>
+<meta name="description" content="英德游玩全攻略：高铁自驾交通指南、四季玩法推荐、1-3日游路线规划。本地人整理，含停车、包车、不自驾攻略。">
+<meta name="keywords" content="英德攻略,英德交通,英德自驾,英德高铁,英德四季,英德路线,英德停车">
+<meta name="author" content="英造社">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://yingzaoshe.cn/guide/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="英德游玩攻略 | 交通出行、四季玩法">
+<meta property="og:description" content="英德游玩全攻略，本地人整理。">
+<meta property="og:url" content="https://yingzaoshe.cn/guide/">
+<meta property="og:site_name" content="英造社">
+<meta property="og:locale" content="zh_CN">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="/favicon_logosc/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon_logosc/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon_logosc/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon_logosc/apple-touch-icon.png">
+
+<!-- Theme -->
+<meta name="theme-color" content="#C90314">
+
+<style>
+:root {
+  --bg: #FFFAFA;
+  --card: #FFFFFF;
+  --text: #3D2B1F;
+  --text2: #8B7355;
+  --text3: #B8A088;
+  --accent: #C90314;
+  --accent-light: #E05050;
+  --gold: #D46070;
+  --gold-light: #FFF0F0;
+  --border: #F0E0E0;
+  --green: #5B8C5A;
+  --green-bg: #EDF5EC;
+  --amber: #D4922A;
+  --amber-bg: #FFF8E8;
+  --blue: #4A90A4;
+  --blue-bg: #E8F4F8;
+  --purple: #8B5A9F;
+  --purple-bg: #F5EEF8;
+  --radius: 12px;
+  --shadow: 0 1px 3px rgba(61,43,31,0.04);
+  --shadow-md: 0 2px 8px rgba(61,43,31,0.06);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ===== NAV ===== */
+.top-nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  background: rgba(255,250,250,0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+  padding: 10px 0;
+}
+.nav-inner {
+  max-width: 680px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16px;
+}
+.nav-logo {
+  font-size: 18px; font-weight: 600; color: var(--accent);
+  text-decoration: none;
+}
+.nav-back {
+  font-size: 14px; color: var(--text2);
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+.nav-back:hover {
+  background: var(--gold-light); color: var(--accent);
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding: 80px 0 40px;
+  text-align: center;
+}
+.hero-icon { font-size: 48px; margin-bottom: 12px; }
+.hero h1 {
+  font-size: 30px; font-weight: 700;
+  color: var(--accent); margin-bottom: 8px;
+}
+.hero .subtitle {
+  font-size: 16px; color: var(--text2);
+  margin-bottom: 20px;
+}
+.hero-badges {
+  display: flex; justify-content: center; gap: 10px;
+  flex-wrap: wrap;
+}
+.hero-badge {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 20px; padding: 5px 12px;
+  font-size: 13px; color: var(--text2);
+}
+
+/* ===== QUICK NAV ===== */
+.quick-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.quick-nav a {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 13px;
+  color: var(--text2);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.quick-nav a:hover {
+  background: var(--gold-light);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ===== SECTION ===== */
+.section {
+  padding: 32px 0;
+}
+.section-title {
+  font-size: 22px; font-weight: 700;
+  color: var(--accent); margin-bottom: 8px;
+  display: flex; align-items: center; gap: 8px;
+}
+.section-title .dot {
+  width: 8px; height: 8px;
+  border-radius: 50%; background: var(--accent); flex-shrink: 0;
+}
+.section-desc {
+  font-size: 15px; color: var(--text2);
+  margin-bottom: 20px;
+}
+
+/* ===== TRANSPORT TABLE ===== */
+.transport-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 14px;
+}
+.transport-table th,
+.transport-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+.transport-table th {
+  background: var(--gold-light);
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 13px;
+}
+.transport-table td {
+  color: var(--text2);
+}
+.transport-table tr:hover td {
+  background: var(--bg);
+}
+
+/* ===== ROUTE CARD ===== */
+.route-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 12px;
+}
+.route-card h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--text); margin-bottom: 8px;
+}
+.route-card .route-tag {
+  display: inline-block;
+  font-size: 12px; padding: 3px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.route-tag-1d { background: var(--blue-bg); color: var(--blue); }
+.route-tag-2d { background: var(--amber-bg); color: var(--amber); }
+.route-tag-3d { background: var(--gold-light); color: var(--accent); }
+.route-card p {
+  font-size: 15px; color: var(--text2);
+  line-height: 1.7;
+}
+.route-card .route-stops {
+  display: flex; flex-wrap: wrap;
+  gap: 6px; margin-top: 10px;
+}
+.route-card .route-stop {
+  font-size: 13px; padding: 4px 10px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--text2);
+}
+
+/* ===== SEASON CARD ===== */
+.season-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 16px;
+}
+.season-card h3 {
+  font-size: 18px; font-weight: 600;
+  color: var(--text); margin-bottom: 8px;
+}
+.season-card .season-tag {
+  display: inline-block;
+  font-size: 11px; padding: 2px 8px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.season-card p {
+  font-size: 15px; color: var(--text2);
+  line-height: 1.7;
+}
+.season-card ul {
+  padding-left: 18px;
+  font-size: 15px; color: var(--text2);
+  margin-top: 8px;
+}
+.season-card li {
+  margin-bottom: 4px;
+}
+
+/* ===== TIPS CARD ===== */
+.tips-card {
+  background: linear-gradient(135deg, var(--green-bg) 0%, #fff 100%);
+  border: 1px solid var(--green);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin: 20px 0;
+}
+.tips-card h3 {
+  font-size: 17px; font-weight: 600;
+  color: var(--green); margin-bottom: 12px;
+}
+.tips-card ul {
+  padding-left: 18px;
+  font-size: 15px; color: var(--text2);
+}
+.tips-card li {
+  margin-bottom: 6px;
+}
+
+/* ===== CALENDAR TABLE ===== */
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 13px;
+}
+.calendar-table th,
+.calendar-table td {
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+.calendar-table th {
+  background: var(--gold-light);
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 12px;
+}
+.calendar-table td {
+  color: var(--text2);
+}
+
+/* ===== ABOUT ===== */
+.about-section {
+  text-align: center; padding: 40px 0 60px;
+}
+.about-section h2 {
+  font-size: 22px; font-weight: 700;
+  color: var(--accent); margin-bottom: 8px;
+}
+.about-section p {
+  font-size: 15px; color: var(--text2);
+  max-width: 400px; margin: 0 auto 20px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center; padding: 24px 0;
+  border-top: 1px solid var(--border);
+  font-size: 14px; color: var(--text3);
+}
+
+/* ===== BACK TO TOP ===== */
+.back-to-top {
+  position: fixed; bottom: 24px; right: 20px;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--accent); color: #fff;
+  border: none; font-size: 20px;
+  cursor: pointer; z-index: 99;
+  opacity: 0; transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
+  box-shadow: 0 2px 8px rgba(61,43,31,0.2);
+  display: flex; align-items: center; justify-content: center;
+}
+.back-to-top.visible {
+  opacity: 1; transform: translateY(0);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 480px) {
+  .hero h1 { font-size: 26px; }
+  .section-title { font-size: 20px; }
+  .transport-table { font-size: 12px; }
+  .transport-table th, .transport-table td { padding: 8px; }
+  .calendar-table { font-size: 11px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="top-nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">英造社</a>
+    <a href="/" class="nav-back">← 返回首页</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-icon">🗺️</div>
+    <h1>英德游玩攻略</h1>
+    <p class="subtitle">怎么来、怎么走、什么时候来最好玩</p>
+    <div class="hero-badges">
+      <span class="hero-badge">交通指南</span>
+      <span class="hero-badge">四季玩法</span>
+      <span class="hero-badge">路线规划</span>
+      <span class="hero-badge">不自驾攻略</span>
+    </div>
+  </section>
+
+  <!-- Quick Nav -->
+  <div class="quick-nav">
+    <a href="#transport">交通出行</a>
+    <a href="#season">四季英德</a>
+    <a href="#route">推荐路线</a>
+    <a href="#no-car">不自驾攻略</a>
+    <a href="#calendar">活动日历</a>
+  </div>
+
+  <!-- Transport -->
+  <section class="section" id="transport">
+    <h2 class="section-title"><span class="dot"></span>怎么来英德</h2>
+    <p class="section-desc">英德不大，但景点分散。先搞定怎么来。</p>
+
+    <h3 style="font-size:16px;font-weight:600;color:var(--text);margin:16px 0 8px;">🚄 高铁（最推荐）</h3>
+    <table class="transport-table">
+      <thead>
+        <tr>
+          <th>出发地</th>
+          <th>时长</th>
+          <th>票价（二等座）</th>
+          <th>班次</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>广州南 → 英德西</td>
+          <td>约 40 分钟</td>
+          <td><span style="color:var(--accent);font-weight:600;">约 65 元</span></td>
+          <td>每天 30+ 班</td>
+        </tr>
+        <tr>
+          <td>深圳北 → 英德西</td>
+          <td>约 1 小时 10 分</td>
+          <td><span style="color:var(--accent);font-weight:600;">约 120 元</span></td>
+          <td>每天 10+ 班</td>
+        </tr>
+        <tr>
+          <td>清远 → 英德西</td>
+          <td>约 20 分钟</td>
+          <td><span style="color:var(--accent);font-weight:600;">约 25 元</span></td>
+          <td>每天 15+ 班</td>
+        </tr>
+        <tr>
+          <td>韶关 → 英德西</td>
+          <td>约 30 分钟</td>
+          <td><span style="color:var(--accent);font-weight:600;">约 35 元</span></td>
+          <td>每天 10+ 班</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:14px;color:var(--text3);margin-bottom:16px;">英德西站离市区很近，打车 10-15 分钟就到。</p>
+
+    <h3 style="font-size:16px;font-weight:600;color:var(--text);margin:16px 0 8px;">🚗 自驾</h3>
+    <table class="transport-table">
+      <thead>
+        <tr>
+          <th>出发地</th>
+          <th>路线</th>
+          <th>时长</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>广州</td>
+          <td>广乐高速（G4W3）→ 英德出口</td>
+          <td>1.5-2 小时</td>
+        </tr>
+        <tr>
+          <td>深圳</td>
+          <td>广深高速 → 广乐高速 → 英德出口</td>
+          <td>2.5-3 小时</td>
+        </tr>
+        <tr>
+          <td>佛山</td>
+          <td>广佛高速 → 广乐高速 → 英德出口</td>
+          <td>2 小时左右</td>
+        </tr>
+        <tr>
+          <td>东莞</td>
+          <td>莞深高速 → 广乐高速 → 英德出口</td>
+          <td>2.5 小时左右</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-size:16px;font-weight:600;color:var(--text);margin:16px 0 8px;">🚌 大巴</h3>
+    <table class="transport-table">
+      <thead>
+        <tr>
+          <th>出发地</th>
+          <th>时长</th>
+          <th>票价</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>广州省站/市站</td>
+          <td>约 2.5 小时</td>
+          <td>约 50-60 元</td>
+        </tr>
+        <tr>
+          <td>深圳罗湖/福田</td>
+          <td>约 3.5 小时</td>
+          <td>约 80-100 元</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:14px;color:var(--text3);margin-bottom:16px;">大巴到的是英德汽车站（市区内），比高铁站离市区更近，但时间长。</p>
+  </section>
+
+  <!-- In Yingde -->
+  <section class="section">
+    <h2 class="section-title"><span class="dot"></span>在英德怎么走</h2>
+    <p class="section-desc">市区内和去景点的交通方式。</p>
+
+    <h3 style="font-size:16px;font-weight:600;color:var(--text);margin:16px 0 8px;">市区内</h3>
+    <div class="route-card" style="margin-bottom:16px;">
+      <p><strong>① 打车</strong> — 起步价 7 元，市区内基本 15 元以内。滴滴/花小猪都很好叫车。</p>
+      <p><strong>② 共享电动车</strong> — 市区覆盖很广，扫码即用。2 元/15 分钟，短途非常方便。注意：超出运营区会自动断电，用之前看好地图。</p>
+      <p><strong>③ 公交车</strong> — 票价 2 元，线路不多，主要覆盖市区主干道。去景点不太方便，不建议。</p>
+    </div>
+
+    <h3 style="font-size:16px;font-weight:600;color:var(--text);margin:16px 0 8px;">市区到景点</h3>
+    <table class="transport-table">
+      <thead>
+        <tr>
+          <th>目的地</th>
+          <th>距离</th>
+          <th>打车费用</th>
+          <th>推荐方式</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>宝晶宫</td>
+          <td>7 公里</td>
+          <td>15-20 元</td>
+          <td>打车</td>
+        </tr>
+        <tr>
+          <td>红旗茶厂</td>
+          <td>10 公里</td>
+          <td>20-25 元</td>
+          <td>打车</td>
+        </tr>
+        <tr>
+          <td>积庆里</td>
+          <td>15 公里</td>
+          <td>25-35 元</td>
+          <td>打车</td>
+        </tr>
+        <tr>
+          <td>英西峰林</td>
+          <td>40 公里</td>
+          <td>80-100 元</td>
+          <td>包车/自驾</td>
+        </tr>
+        <tr>
+          <td>九州驿站</td>
+          <td>50 公里</td>
+          <td>100-130 元</td>
+          <td>包车/自驾</td>
+        </tr>
+        <tr>
+          <td>浈阳峡</td>
+          <td>30 公里</td>
+          <td>60-80 元</td>
+          <td>包车/自驾</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-size:16px;font-weight:600;color:var(--text);margin:16px 0 8px;">🅿️ 各景点停车指南</h3>
+    <table class="transport-table">
+      <thead>
+        <tr>
+          <th>景点</th>
+          <th>停车场</th>
+          <th>收费</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>宝晶宫</td><td>景区门口停车场</td><td>10 元/次</td></tr>
+        <tr><td>洞天仙境</td><td>景区停车场</td><td>免费</td></tr>
+        <tr><td>积庆里</td><td>茶厂停车场</td><td>免费</td></tr>
+        <tr><td>红旗茶厂</td><td>茶厂门口</td><td>免费车位有限</td></tr>
+        <tr><td>英西峰林</td><td>沿途可停</td><td>免费</td></tr>
+        <tr><td>浈阳峡</td><td>景区停车场</td><td>10 元/次</td></tr>
+        <tr><td>九州驿站</td><td>驿站停车场</td><td>住客免费</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- No Car -->
+  <section class="section" id="no-car">
+    <div class="tips-card">
+      <h3>🚫 不自驾游英德全攻略</h3>
+      <p style="margin-bottom:12px;">很多粉丝问："我不会开车，能玩英德吗？"答案是：<strong>能，但要有策略</strong>。</p>
+      <ul>
+        <li><strong>Day 1（市区周边）</strong><br>
+        高铁到英德西站 → 打车到市区（15 元）→ 市区内用共享电动车 → 去宝晶宫/红旗茶厂：打车来回（各 30-40 元）→ 住市区</li>
+        <li><strong>Day 2（英西峰林）</strong><br>
+        方案 A：包车一天（200-300 元），司机带你玩英西<br>
+        方案 B：顺风车去九龙镇（约 40 元），到了之后租电动车逛<br>
+        下午让司机或顺风车送回高铁站</li>
+        <li><strong>Tips：</strong>包车司机的联系方式可以在粉丝群问，本地人有靠谱推荐。如果同行 2-4 人，包车人均才 50-75 元，跟打车差不多。提前一天约好车，不要在当天早上临时找。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Seasons -->
+  <section class="section" id="season">
+    <h2 class="section-title"><span class="dot"></span>四季英德</h2>
+    <p class="section-desc">每个季节的英德都不一样。春天采茶、夏天玩水、秋天丰收、冬天温泉。</p>
+
+    <div class="season-card">
+      <h3>🌸 春季（3-5月）：采茶 + 赏花</h3>
+      <span class="season-tag" style="background:var(--green-bg);color:var(--green);">15-25°C · 舒适</span>
+      <p><strong>必做清单：</strong></p>
+      <ul>
+        <li><strong>采茶体验</strong> — 3月中旬-5月初，积庆里/红旗茶厂/T三有机茶园，亲手采茶、参观制茶、品英红九号（约 50-80 元/人）</li>
+        <li><strong>赏花</strong> — 3月黄花风铃木（金黄色花海）、4月杜鹃花、3-4月油菜花（九龙镇）</li>
+        <li><strong>吃艾糍</strong> — 清明前后的传统小吃，艾草做的糯米团子</li>
+      </ul>
+      <p style="margin-top:8px;"><strong>推荐路线：</strong>Day1 积庆里采茶 → 红旗茶厂 → 住野渡谷；Day2 英西峰林油菜花 → 买春茶 → 回程</p>
+    </div>
+
+    <div class="season-card">
+      <h3>💦 夏季（6-8月）：玩水 + 避暑</h3>
+      <span class="season-tag" style="background:var(--blue-bg);color:var(--blue);">28-35°C · 炎热多雨</span>
+      <p><strong>必做清单：</strong></p>
+      <ul>
+        <li><strong>漂流</strong> — 老虎谷漂流（黄花镇），夏季最火，刺激又凉快（约 80-120 元）</li>
+        <li><strong>玩水</strong> — 宝墩湖（后院直通泳池）、大樟沙滩度假村（北江边）</li>
+        <li><strong>夏季泡野温泉</strong> — 晚上泡，白天太热。泡完温泉直接跳溪水里凉快</li>
+        <li><strong>避暑溶洞</strong> — 宝晶宫（洞内比外面低 5-8 度）、洞天仙境</li>
+      </ul>
+      <p style="margin-top:8px;"><strong>夏季美食：</strong>木薯羹、冰镇绿豆沙（益民糖水招牌）、河鲜（夏天最肥美）</p>
+      <p style="margin-top:4px;color:var(--accent);">⚠️ 注意：做好防晒，带驱蚊水，夏季多暴雨，出行前看天气预报</p>
+    </div>
+
+    <div class="season-card">
+      <h3>🍂 秋季（9-11月）：丰收 + 登山</h3>
+      <span class="season-tag" style="background:var(--amber-bg);color:var(--amber);">20-28°C · 最舒服</span>
+      <p><strong>必做清单：</strong></p>
+      <ul>
+        <li><strong>登山徒步</strong> — 英西峰林骑行（气温舒服）、天门沟徒步（秋色正浓）、观音岩登高</li>
+        <li><strong>丰收节</strong> — 10月前后，各乡镇有丰收节活动，可体验打谷、晒秋</li>
+        <li><strong>秋季限定美食</strong> — 麻竹笋（9-10月鲜笋最好吃）、秋天河鲜最肥、腊味（11月开始）</li>
+      </ul>
+      <p style="margin-top:8px;"><strong>推荐路线：</strong>Day1 英西峰林骑行 → 九龙豆腐宴 → 观音岩登高 → 住香溪谷温泉；Day2 浈阳峡游船 → 古镇散步 → 买秋季特产 → 回程</p>
+    </div>
+
+    <div class="season-card">
+      <h3>♨️ 冬季（12-2月）：温泉 + 年味</h3>
+      <span class="season-tag" style="background:var(--gold-light);color:var(--accent);">8-15°C · 湿冷</span>
+      <p><strong>必做清单：</strong></p>
+      <ul>
+        <li><strong>泡温泉</strong> — 首选九州驿站树上温泉，其次宝墩湖、奇洞温泉、香溪谷。冬天周末很抢手，提前订！</li>
+        <li><strong>大湾舞火麒麟</strong> — 正月十五元宵节，英德最震撼的民俗活动！一年只有这一天</li>
+        <li><strong>春节活动</strong> — 金山祖庙祈福（正月初一）、花市（春节前）、做腊味</li>
+      </ul>
+      <p style="margin-top:8px;"><strong>冬季必吃：</strong>鸡煲、牛杂煲、腊味煲仔饭</p>
+    </div>
+  </section>
+
+  <!-- Calendar -->
+  <section class="section" id="calendar">
+    <h2 class="section-title"><span class="dot"></span>节假日限定活动日历</h2>
+    <p class="section-desc">英德全年都有好玩的，挑对时间来。</p>
+
+    <table class="calendar-table">
+      <thead>
+        <tr>
+          <th>时间</th>
+          <th>活动</th>
+          <th>地点</th>
+          <th>备注</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>正月十五</td><td><strong>大湾舞火麒麟</strong></td><td>大湾镇</td><td>最震撼的民俗活动</td></tr>
+        <tr><td>正月初一</td><td>金山祖庙祈福</td><td>金山祖庙</td><td>香火最旺</td></tr>
+        <tr><td>春节前一周</td><td>英德花市</td><td>市区</td><td>买年花、逛花街</td></tr>
+        <tr><td>3-4月</td><td><strong>采茶季</strong></td><td>积庆里/红旗茶厂</td><td>明前茶最金贵</td></tr>
+        <tr><td>3月</td><td>黄花风铃木花期</td><td>英德各处</td><td>花期短，要盯紧</td></tr>
+        <tr><td>清明前后</td><td>艾糍季</td><td>菜市场/农村</td><td>限时美食</td></tr>
+        <tr><td>5月</td><td>英德红茶头采季</td><td>英红镇</td><td>有活动</td></tr>
+        <tr><td>7-8月</td><td><strong>漂流季</strong></td><td>老虎谷</td><td>周末人多</td></tr>
+        <tr><td>10月</td><td>麻竹笋丰收</td><td>西牛镇</td><td>新鲜笋最好吃</td></tr>
+        <tr><td>10月</td><td>丰收节活动</td><td>各乡镇</td><td>看晒秋</td></tr>
+        <tr><td>12月</td><td><strong>温泉旺季</strong></td><td>各大温泉</td><td>提前订房</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-size:16px;font-weight:600;color:var(--text);margin:20px 0 8px;">新历节日指南</h3>
+    <table class="calendar-table">
+      <thead>
+        <tr>
+          <th>节日</th>
+          <th>建议</th>
+          <th>原因</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>元旦</td><td style="color:var(--green);"><strong>✅ 可以去</strong></td><td>有跨年活动，温泉刚好</td></tr>
+        <tr><td>春节</td><td style="color:var(--accent);"><strong>❌ 别去景点</strong></td><td>人太多，适合在市区吃吃喝喝</td></tr>
+        <tr><td>清明</td><td style="color:var(--green);"><strong>✅ 可以去</strong></td><td>采艾糍、春茶上市</td></tr>
+        <tr><td>五一</td><td style="color:var(--amber);"><strong>⚠️ 谨慎</strong></td><td>人很多，建议去小众景点</td></tr>
+        <tr><td>端午</td><td style="color:var(--green);"><strong>✅ 可以去</strong></td><td>吃粽子、北江风光好</td></tr>
+        <tr><td>国庆</td><td style="color:var(--accent);"><strong>❌ 别去热门景点</strong></td><td>宝晶宫排队到哭，建议野炊或野温泉</td></tr>
+        <tr><td>中秋</td><td style="color:var(--green);"><strong>✅ 可以去</strong></td><td>赏月、吃月饼、秋天舒服</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Routes -->
+  <section class="section" id="route">
+    <h2 class="section-title"><span class="dot"></span>推荐路线</h2>
+    <p class="section-desc">根据不同时间安排，规划了以下路线供参考。</p>
+
+    <div class="route-card">
+      <h3>一日游：精华打卡</h3>
+      <span class="route-tag route-tag-1d">1 天</span>
+      <p>适合时间紧张的游客，精选最精华的景点。</p>
+      <div class="route-stops">
+        <span class="route-stop">上午：英西峰林走廊</span>
+        <span class="route-stop">下午：洞天仙境</span>
+        <span class="route-stop">傍晚：峰林晓镇</span>
+      </div>
+    </div>
+
+    <div class="route-card">
+      <h3>两日游：深度体验</h3>
+      <span class="route-tag route-tag-2d">2 天 1 夜</span>
+      <p>推荐路线，可以充分体验英德的自然风光和人文特色。</p>
+      <div class="route-stops">
+        <span class="route-stop">Day1：英西峰林→洞天仙境→住英西民宿</span>
+        <span class="route-stop">Day2：宝晶宫→浈阳峡→返程</span>
+      </div>
+    </div>
+
+    <div class="route-card">
+      <h3>三日游：休闲度假</h3>
+      <span class="route-tag route-tag-3d">3 天 2 夜</span>
+      <p>适合家庭出游或度假，节奏轻松，体验丰富。</p>
+      <div class="route-stops">
+        <span class="route-stop">Day1：天门沟→树上温泉→住树屋</span>
+        <span class="route-stop">Day2：英西峰林→洞天仙境→住英西</span>
+        <span class="route-stop">Day3：宝晶宫→积庆里红茶谷→返程</span>
+      </div>
+    </div>
+
+    <div class="route-card">
+      <h3>春季限定：采茶赏花</h3>
+      <span class="route-tag route-tag-2d">2 天 1 夜</span>
+      <p>3-5月专属路线，体验采茶和赏花。</p>
+      <div class="route-stops">
+        <span class="route-stop">Day1：积庆里采茶体验→红旗茶厂→住野渡谷</span>
+        <span class="route-stop">Day2：英西峰林油菜花→买春茶做伴手礼→回程</span>
+      </div>
+    </div>
+
+    <div class="route-card">
+      <h3>夏季限定：玩水避暑</h3>
+      <span class="route-tag route-tag-2d">2 天 1 夜</span>
+      <p>6-8月专属路线，玩水、漂流、避暑。</p>
+      <div class="route-stops">
+        <span class="route-stop">Day1：老虎谷漂流→宝墩湖玩水→住宝墩湖</span>
+        <span class="route-stop">Day2：宝晶宫溶洞（天然空调）→回程</span>
+      </div>
+    </div>
+
+    <div class="route-card">
+      <h3>冬季限定：温泉养生</h3>
+      <span class="route-tag route-tag-2d">2 天 1 夜</span>
+      <p>12-2月专属路线，泡温泉、吃美食。</p>
+      <div class="route-stops">
+        <span class="route-stop">Day1：九州驿站→树上温泉→住树屋</span>
+        <span class="route-stop">Day2：市区吃早茶→买腊味手信→回程</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about-section">
+    <h2>关于英造社</h2>
+    <p>
+      英德首家本土原创文化创意品牌，专注挖掘英德非遗历史和百亿产业，为游客提供最地道的英德旅游指南。
+    </p>
+    <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;">
+      <a href="/stay/" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:20px;background:var(--green-bg);color:var(--green);text-decoration:none;font-size:14px;font-weight:500;">← 上一篇：住宿推荐</a>
+      <a href="/" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:20px;background:var(--gold-light);color:var(--accent);text-decoration:none;font-size:14px;font-weight:500;">返回首页</a>
+      <a href="/guide/deep.html" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:20px;background:var(--purple-bg);color:var(--purple);text-decoration:none;font-size:14px;font-weight:500;">下一篇：深度英德 →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    英德游玩攻略 · 英造社整理 · 持续更新中 · 2026年6月
+  </footer>
+
+</div>
+
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  backToTop.classList.toggle('visible', window.scrollY > 400);
+});
+</script>
+
+</body>
+</html>
