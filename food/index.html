@@ -42,15 +42,63 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "英德地道美食 | 本地人推荐",
-  "description": "英德地道美食地图，跟着本地人吃遍英德24镇。",
-  "author": { "@type": "Organization", "name": "英造社" },
-  "publisher": { "@type": "Organization", "name": "英造社" },
-  "datePublished": "2026-06-06",
-  "dateModified": "2026-06-06",
-  "mainEntityOfPage": "https://yingzaoshe.cn/food/",
-  "inLanguage": "zh-CN"
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://yingzaoshe.cn/food/#article",
+      "headline": "英德地道美食 | 走地鸡、九龙豆腐、河鲜、农家菜推荐",
+      "description": "英德地道美食地图：九龙豆腐、黄花走地鸡、浛洸卜卜糍、北江河鲜、农家菜。本地人推荐餐厅，人均消费、招牌菜、地址全攻略。",
+      "author": { "@type": "Organization", "name": "英造社" },
+      "publisher": { "@type": "Organization", "name": "英造社", "@id": "https://yingzaoshe.cn/#organization" },
+      "datePublished": "2026-06-06",
+      "dateModified": "2026-06-06",
+      "mainEntityOfPage": "https://yingzaoshe.cn/food/",
+      "inLanguage": "zh-CN",
+      "keywords": ["英德美食", "英德农家菜", "九龙豆腐", "黄花走地鸡", "英德河鲜", "浛洸卜卜糍", "英德餐厅推荐"],
+      "articleSection": "美食攻略"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://yingzaoshe.cn/food/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://yingzaoshe.cn/" },
+        { "@type": "ListItem", "position": 2, "name": "地道美食", "item": "https://yingzaoshe.cn/food/" }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://yingzaoshe.cn/food/#foodlist",
+      "name": "英德必吃美食清单",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "黄花走地鸡", "description": "英德最出名的美食，山泉水喂养、自由放养，一鸡三吃" },
+        { "@type": "ListItem", "position": 2, "name": "九龙豆腐", "description": "九龙镇传统名吃，山泉水制作，嫩滑如布丁" },
+        { "@type": "ListItem", "position": 3, "name": "北江河鲜", "description": "北江清澈水质孕育的河虾、河蟹、鳊鱼等，清蒸最鲜" },
+        { "@type": "ListItem", "position": 4, "name": "浛洸卜卜糍", "description": "浛洸镇传统小吃，外酥里嫩，葱香四溢" },
+        { "@type": "ListItem", "position": 5, "name": "英德鸡煲", "description": "本地走地鸡，汤底浓郁，冬天吃特别治愈" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://yingzaoshe.cn/food/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "英德有什么必吃的美食？",
+          "acceptedAnswer": { "@type": "Answer", "text": "英德必吃美食包括：黄花走地鸡（一鸡三吃）、九龙豆腐（山泉水制作）、北江河鲜（清蒸最鲜）、浛洸卜卜糍（古镇小吃）、英德鸡煲（汤底浓郁）。来英德不吃这些，等于白来。" }
+        },
+        {
+          "@type": "Question",
+          "name": "英德农家菜人均消费多少？",
+          "acceptedAnswer": { "@type": "Answer", "text": "英德农家菜人均消费约50-100元。走地鸡一鸡三吃约60-100元/人，九龙豆腐宴约20-40元/人，北江河鲜约80-150元/人。农家菜分量很足，2-3人点2-3个菜就够了。" }
+        },
+        {
+          "@type": "Question",
+          "name": "英德早餐有什么特色？",
+          "acceptedAnswer": { "@type": "Answer", "text": "英德特色早餐包括：肠粉（比广州的更薄更滑）、云吞面（竹升面弹牙）、腌面及第汤（客家味）、擂茶粥（英德特色，清香养胃）、猪杂汤粉（望埠猪杂王很有名）。人均5-15元。" }
+        }
+      ]
+    }
+  ]
 }
 </script>
 

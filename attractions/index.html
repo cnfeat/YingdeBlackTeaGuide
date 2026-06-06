@@ -38,19 +38,111 @@
 <!-- Theme -->
 <meta name="theme-color" content="#C90314">
 
-<!-- Structured Data -->
+<!-- Structured Data: Article + BreadcrumbList + FAQPage + ItemList -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "英德必游景点 | 十大景区推荐",
-  "description": "英德必游十大景点推荐，含门票、交通、游玩建议。",
-  "author": { "@type": "Organization", "name": "英造社" },
-  "publisher": { "@type": "Organization", "name": "英造社" },
-  "datePublished": "2026-06-06",
-  "dateModified": "2026-06-06",
-  "mainEntityOfPage": "https://yingzaoshe.cn/attractions/",
-  "inLanguage": "zh-CN"
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://yingzaoshe.cn/attractions/#article",
+      "headline": "英德必游景点 | 英西峰林、宝晶宫、天门沟等十大景区推荐",
+      "description": "英德必游十大景点推荐：英西峰林走廊、宝晶宫、天门沟、洞天仙境、浈阳峡等。本地人整理，含门票、交通、游玩建议。",
+      "author": { "@id": "https://yingzaoshe.cn/#organization" },
+      "publisher": { "@id": "https://yingzaoshe.cn/#organization" },
+      "datePublished": "2026-06-06",
+      "dateModified": "2026-06-06",
+      "mainEntityOfPage": "https://yingzaoshe.cn/attractions/",
+      "inLanguage": "zh-CN",
+      "articleSection": "旅游攻略",
+      "keywords": ["英德景点", "英德旅游", "英西峰林", "宝晶宫", "天门沟", "洞天仙境", "浈阳峡"]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://yingzaoshe.cn/attractions/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://yingzaoshe.cn/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "必游景点",
+          "item": "https://yingzaoshe.cn/attractions/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://yingzaoshe.cn/attractions/#itemlist",
+      "name": "英德必游十大景点",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "英西峰林走廊",
+          "description": "广东省最密集的峰林游廊，素有广东小桂林之称"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "宝晶宫国际旅游度假区",
+          "description": "岭南第一洞天，三层巨型溶洞"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "九州驿站·天门沟",
+          "description": "森林、瀑布、温泉、树屋于一体的生态度假区"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "洞天仙境",
+          "description": "巨型天坑溶洞，乘船游洞"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "浈阳峡风景区",
+          "description": "北江小三峡，峡谷风光"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://yingzaoshe.cn/attractions/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "英德最值得去的景点是哪些？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "英德必去前三：英西峰林走廊（广东小桂林，免费）、宝晶宫（岭南第一洞天，溶洞奇观）、天门沟（树上温泉+树屋住宿）。时间充裕还可去洞天仙境、浈阳峡、仙桥地下河等。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "英德景点门票多少钱？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "英西峰林沿途免费；宝晶宫套票约80-150元；天门沟约60-100元；洞天仙境约70元；浈阳峡约50-80元；仙桥地下河约70元；积庆里红茶谷免费。建议提前网上购票有折扣。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "英德旅游需要几天？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "建议至少安排2天1夜：第一天英西峰林+洞天仙境，第二天宝晶宫或天门沟。时间充裕可安排3天2夜，加入温泉体验和红茶谷采茶。"
+          }
+        }
+      ]
+    }
+  ]
 }
 </script>
 

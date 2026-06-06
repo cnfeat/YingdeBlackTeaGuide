@@ -45,20 +45,68 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "英德红茶购买攻略 | 本地人带路，买茶不踩坑",
-  "description": "英德本地人写的英德红茶购买攻略，涵盖英红九号等级价格、购买渠道、挑选技巧、送礼指南。",
-  "author": { "@type": "Person", "name": "英德美食猫" },
-  "publisher": { "@type": "Organization", "name": "英造社" },
-  "datePublished": "2026-05-01",
-  "dateModified": "2026-06-04",
-  "mainEntityOfPage": "https://yingzaoshe.cn/tea/",
-  "about": {
-    "@type": "Thing",
-    "name": "英德红茶",
-    "description": "英德红茶是广东省英德市特产，为中国国家地理标志产品"
-  },
-  "inLanguage": "zh-CN"
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://yingzaoshe.cn/tea/#article",
+      "headline": "英德红茶购买攻略 | 英红九号怎么买、价格等级、避坑指南",
+      "description": "英德本地人写的英德红茶购买攻略，涵盖英红九号等级与价格、购买渠道、挑选技巧、送礼指南，买茶不踩坑。",
+      "author": { "@type": "Person", "name": "英德美食猫" },
+      "publisher": { "@type": "Organization", "name": "英造社", "@id": "https://yingzaoshe.cn/#organization" },
+      "datePublished": "2026-05-01",
+      "dateModified": "2026-06-06",
+      "mainEntityOfPage": "https://yingzaoshe.cn/tea/",
+      "about": {
+        "@type": "Thing",
+        "name": "英德红茶",
+        "description": "英德红茶是广东省英德市特产，为中国国家地理标志产品，与祁门红茶、正山小种并称中国三大红茶"
+      },
+      "inLanguage": "zh-CN",
+      "keywords": ["英德红茶", "英红九号", "英德红茶购买攻略", "英红九号购买", "红茶选购", "英德红茶价格"],
+      "articleSection": "购物攻略"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://yingzaoshe.cn/tea/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://yingzaoshe.cn/" },
+        { "@type": "ListItem", "position": 2, "name": "红茶攻略", "item": "https://yingzaoshe.cn/tea/" }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://yingzaoshe.cn/tea/#gradelist",
+      "name": "英德红茶等级与价格",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "特级一等（金毫茶）", "description": "全芽头，金黄毫毛密布，800-1500+元/斤，适合高端送礼收藏" },
+        { "@type": "ListItem", "position": 2, "name": "特级二等（金毛毫）", "description": "一芽一叶初展，毫毛多，400-800元/斤，2023中法元首茶叙同款" },
+        { "@type": "ListItem", "position": 3, "name": "一级（金英红）", "description": "一芽一叶，汤色红亮，200-400元/斤，适合日常送礼家庭品饮" },
+        { "@type": "ListItem", "position": 4, "name": "二级（英红九号）", "description": "一芽二叶为主，口感醇厚，150-200元/斤，日常饮用办公室用茶" },
+        { "@type": "ListItem", "position": 5, "name": "三级", "description": "一芽二三叶，滋味浓强，80-150元/斤，奶茶基底大宗用茶" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://yingzaoshe.cn/tea/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "网上直播99元9罐的英红九号是真的吗？",
+          "acceptedAnswer": { "@type": "Answer", "text": "大概率是真的英红九号，但不是好茶。低价茶通常是夏茶或去年剩的旧茶，茶味很淡。建议先买二级英红九号建立正确认知，再升级品鉴。" }
+        },
+        {
+          "@type": "Question",
+          "name": "英德红茶怎么保存？",
+          "acceptedAnswer": { "@type": "Answer", "text": "红茶不需要放冰箱。密封、避光、防潮、无异味即可。建议用锡罐或密封铁罐存放，放在阴凉干燥处。开封后尽量在3-6个月内喝完，风味最佳。" }
+        },
+        {
+          "@type": "Question",
+          "name": "第一次买英德红茶推荐什么？",
+          "acceptedAnswer": { "@type": "Answer", "text": "推荐从二级英红九号（口粮茶）入手，80-200元/斤，价格不贵品质稳定。品牌选鸿雁（茶科所出品）或英红（国企老牌）的入门款，先建立对英红九号浓强鲜爽味道的正确认知。" }
+        }
+      ]
+    }
+  ]
 }
 </script>
 <style>

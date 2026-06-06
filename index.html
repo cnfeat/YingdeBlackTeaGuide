@@ -36,15 +36,116 @@
 <!-- Theme -->
 <meta name="theme-color" content="#C90314">
 
-<!-- Structured Data -->
+<!-- Structured Data: WebSite + Organization + BreadcrumbList + FAQPage -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "英造社",
-  "description": "英德文旅生活指南，吃喝玩乐全攻略",
-  "url": "https://yingzaoshe.cn/",
-  "publisher": { "@type": "Organization", "name": "英造社" }
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://yingzaoshe.cn/#website",
+      "name": "英造社",
+      "description": "英德文旅生活指南，吃喝玩乐全攻略",
+      "url": "https://yingzaoshe.cn/",
+      "publisher": { "@id": "https://yingzaoshe.cn/#organization" },
+      "inLanguage": "zh-CN",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://yingzaoshe.cn/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://yingzaoshe.cn/#organization",
+      "name": "英造社",
+      "alternateName": "英造社文创",
+      "description": "英德首家本土原创文化创意品牌，专注挖掘英德非遗历史和百亿产业",
+      "url": "https://yingzaoshe.cn/",
+      "logo": "https://yingzaoshe.cn/favicon_logosc/favicon-512x512.png",
+      "sameAs": [
+        "https://www.xiaohongshu.com/user/profile/622ab69a0000000010008c06"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "客服",
+        "availableLanguage": ["Chinese"]
+      }
+    },
+    {
+      "@type": "TravelAgency",
+      "@id": "https://yingzaoshe.cn/#travelagency",
+      "name": "英造社",
+      "description": "英德文旅生活指南，为游客提供景点、美食、住宿一站式指南",
+      "url": "https://yingzaoshe.cn/",
+      "areaServed": {
+        "@type": "City",
+        "name": "英德市",
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "广东省清远市"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://yingzaoshe.cn/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://yingzaoshe.cn/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://yingzaoshe.cn/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "英德有什么好玩的景点？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "英德必游景点包括：英西峰林走廊（广东小桂林）、宝晶宫（岭南第一洞天）、天门沟（树上温泉）、洞天仙境（天坑溶洞）、浈阳峡（北江小三峡）等。建议至少安排2天1夜深度游玩。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "英德有什么特色美食？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "英德必吃美食包括：黄花走地鸡（一鸡三吃）、九龙豆腐（嫩滑如布丁）、北江河鲜（清蒸最鲜）、浛洸卜卜糍（外酥里嫩）、英德鸡煲（汤底浓郁）等。农家菜分量足，价格实惠。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "英德住宿怎么选？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "英德住宿推荐：九州驿站树上温泉（独特体验）、宝墩湖温泉度假村（亲子首选）、野渡谷民宿（网红打卡）、英西峰林民宿群（性价比高）。玩英西住英西，玩市区住市区。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "怎么去英德最方便？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "最推荐高铁：广州南到英德西约40分钟（65元），深圳北约1小时10分（120元）。自驾从广州出发约1.5-2小时。英德景点分散，强烈建议自驾或包车。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "英德最佳旅游季节是什么时候？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "春季（3-5月）采茶赏花最佳，秋季（9-11月）登山徒步最舒服。夏季适合玩水漂流，冬季适合泡温泉。建议避开国庆和春节等节假日高峰期。"
+          }
+        }
+      ]
+    }
+  ]
 }
 </script>
 
