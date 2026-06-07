@@ -48,13 +48,13 @@
   --purple: #8B5A9F;
   --purple-bg: #F5EEF8;
   --radius: 12px;
-  --shadow: 0 1px 3px rgba(61,43,31,159);
-  --shadow-md: 0 2px 8px rgba(61,43,31,160);
+  --shadow: 0 1px 3px rgba(61,43,31,0.12);
+  --shadow-md: 0 2px 8px rgba(61,43,31,0.16);
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; }
 .container { max-width: 720px; margin: 0 auto; padding: 0 16px; }
-.top-nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,250,250,162); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); z-index: 100; padding: 10px 0; }
+.top-nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,250,250,0.95); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); z-index: 100; padding: 10px 0; }
 .nav-inner { max-width: 720px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0 16px; }
 .nav-logo { font-size: 18px; font-weight: 600; color: var(--accent); text-decoration: none; }
 .nav-links { display: flex; align-items: center; gap: 8px; }
@@ -81,16 +81,16 @@ body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft
 .page-nav a { display: inline-flex; align-items: center; gap: 6px; padding: 10px 18px; border-radius: 20px; text-decoration: none; font-size: 14px; font-weight: 500; transition: all 0.2s; flex: 1; justify-content: center; }
 .page-nav .prev { background: var(--green-bg); color: var(--green); }
 .page-nav .next { background: var(--gold-light); color: var(--accent); }
-.page-nav a:hover { transform: translateY（-1px); box-shadow: var(--shadow-md); }
+.page-nav a:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); }
 .page-nav .overview { background: var(--blue-bg); color: var(--blue); }
 .footer { text-align: center; padding: 24px 0 40px; border-top: 1px solid var(--border); }
 .footer p { font-size: 13px; color: var(--text3); margin-bottom: 4px; }
 .footer .links { display: flex; justify-content: center; gap: 16px; margin-top: 8px; flex-wrap: wrap; }
 .footer .links a { font-size: 13px; color: var(--text2); text-decoration: none; }
 .footer .links a:hover { color: var(--accent); }
-.back-to-top { position: fixed; bottom: 24px; right: 20px; width: 44px; height: 44px; border-radius: 50%; background: var(--accent); color: #fff; border: none; font-size: 20px; cursor: pointer; z-index: 99; opacity: 0; transform: translateY（20px); transition: opacity 0.3s， transform 0.3s; box-shadow: 0 2px 8px rgba(61,43,31,169); display: flex; align-items: center; justify-content: center; }
-.back-to-top.visible { opacity: 1; transform: translateY（0); }
-@media （max-width: 480px) { .hero h1 { font-size: 28px; } .section-title { font-size: 20px; } .page-nav { flex-direction: column; } .page-nav a { width: 100%; } }
+.back-to-top { position: fixed; bottom: 24px; right: 20px; width: 44px; height: 44px; border-radius: 50%; background: var(--accent); color: #fff; border: none; font-size: 20px; cursor: pointer; z-index: 99; opacity: 0; transform: translateY(20px); transition: opacity 0.3s, transform 0.3s; box-shadow: 0 2px 8px rgba(61,43,31,0.2); display: flex; align-items: center; justify-content: center; }
+.back-to-top.visible { opacity: 1; transform: translateY(0); }
+@media (max-width: 480px) { .hero h1 { font-size: 28px; } .section-title { font-size: 20px; } .page-nav { flex-direction: column; } .page-nav a { width: 100%; } }
 </style>
 </head>
 <body>
@@ -113,33 +113,34 @@ body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft
   <section class="section">
     <h2 class="section-title"><span class="dot"></span>地理位置与行政区划</h2>
     <div class="content-card">
-      <p>英城街道位于北江中游西岸，东与大站镇隔河相望，南与连江口镇交界，西与石灰铺镇接壤，北与横石塘镇和英红镇相连，是英德的“城关镇“，是英德市政治、经济、文化中心。2004年6月撤镇设英城街道办事处。总面积165平方公里，辖城中、城南、城西、城北、仙泉、南山6个社区居民委员会，长岭、廊步、岩前、江湾、白沙、矮山坪6个村民委员会，至2010年总人口16.3万人。现有陈、李、张、黄、何、丘、邱、陆、彭、温、龙、林、吴、汤、胡、赵、朱、莫、万、罗、谢、江、谭、苏、白、廖、冯、徐、康、萧、范、钟、叶、冼、梁、周、郑等姓氏。</p>
+      <p>英城街道位于北江中游西岸，东与大站镇隔河相望，南与连江口镇交界，西与石灰铺镇接壤，北与横石塘镇和英红镇相连，是英德的"城关镇"，是英德市政治、经济、文化中心。2004年6月撤镇设英城街道办事处。总面积165平方公里，辖城中、城南、城西、城北、仙泉、南山6个社区居民委员会，长岭、廊步、岩前、江湾、白沙、矮山坪6个村民委员会，至2010年总人口16.3万人。现有陈、李、张、黄、何、丘、邱、陆、彭、温、龙、林、吴、汤、胡、赵、朱、莫、万、罗、谢、江、谭、苏、白、廖、冯、徐、康、萧、范、钟、叶、冼、梁、周、郑等姓氏。</p>
       <p>英城街道地势西高东低，大部分为丘陵地貌，西部及西南部以丘陵山地为主，北部、中部以台地、阶地为多，北江沿河地带分布有小平原。</p>
     </div>
   </section>
-<section class="section">
+  <section class="section">
     <h2 class="section-title"><span class="dot"></span>历史沿革</h2>
     <div class="content-card">
-      <p>今英城街道办之地，建置于西汉汉高祖年间（前206一前195年)的浈阳县（今英德英中、英东地区和翁源县，以及新丰县、佛冈县部分地方)县治所在地，后历为州、府、路、市（县)治所。清康熙四十四年（1705年)以来，行政区域名称先后变更为图、乡、附城区、城关镇、附城乡、公社、镇。2004年6月撤镇设街道办事处。</p>
-      <p>新中国成立前，工业只有城镇（当时的英城镇)居民的一些手工业。新中国成立</p>
+      <p>今英城街道办之地，建置于西汉汉高祖年间（前206一前195年）的浈阳县（今英德英中、英东地区和翁源县，以及新丰县、佛冈县部分地方）县治所在地，后历为州、府、路、市（县）治所。清康熙四十四年（1705年）以来，行政区域名称先后变更为图、乡、附城区、城关镇、附城乡、公社、镇。2004年6月撤镇设街道办事处。</p>
     </div>
   </section>
-<section class="section">
+  <section class="section">
     <h2 class="section-title"><span class="dot"></span>经济与城市建设</h2>
     <div class="content-card">
-      <p>改革开放后，先后兴办了水泥厂、化工厂、奶牛场等较大型企业，个体工业迅速发展，服装鞋业、木材加工、家私、汽车修配等不断涌现。工业主要有运输、建筑、酿酒、建材、竹木加工、粮食加工、服装加工、家私维修、机械维修等。至2010年，私营企业已有600多家。新中国成立前，农业以传统种植水稻；推广良种，防治病虫害，优势，大力发展三高农业。至2010年，街道已形成良种，防治病虫害，优势，大力发展“农业。至2010年，街道已形成鸡心黄皮基地、笋竹种植基地、沙糖橘种植基地和冬瓜种植基地。英城东临北江，新中国成立前，人、货都靠船艇1958年在今航运浮桥连接东岸渡口。1971年1月20日，英德人民大桥建成通车。20世纪90年代，交通环境逐步改善。1994年后建成了银英公路、英佛公路、北江二桥（浛洸大桥)、观音山隧道及英城至大湾镇省道347。目前，区内交通发达，水陆两便。其中，西有“武广“高铁和正在建设中的“广乐“高速，在长岭村设有高铁站和高速路出人口，距市区不足10公里；东有京广铁路和英佛京珠高速；南有银英路通往清远和广州。城市建设不断扩大和繁荣，2005年全部实现了村村通公路和硬底化及电力及邮政通讯事业快速发展。</p>
+      <p>新中国成立前，工业只有城镇居民的一些手工业。新中国成立后，先后兴办了水泥厂、化工厂、奶牛场等较大型企业，个体工业迅速发展，服装鞋业、木材加工、家私、汽车修配等不断涌现。工业主要有运输、建筑、酿酒、建材、竹木加工、粮食加工、服装加工、家私维修、机械维修等。至2010年，私营企业已有600多家。</p>
+      <p>新中国成立前，农业以传统种植水稻为主。新中国成立后，推广良种，防治病虫害，大力发展三高农业。至2010年，街道已形成鸡心黄皮基地、笋竹种植基地、沙糖橘种植基地和冬瓜种植基地。</p>
+      <p>英城东临北江，新中国成立前，人、货都靠船艇运输。1958年在今航运局建浮桥连接东岸渡口。1971年1月20日，英德人民大桥建成通车。20世纪90年代，交通环境逐步改善。1994年后建成了银英公路、英佛公路、北江二桥（浛洸大桥）、观音山隧道及英城至大湾镇省道347线。目前，区内交通发达，水陆两便。其中，西有"武广"高铁和正在建设中的"广乐"高速，在长岭村设有高铁站和高速路出入口，距市区不足10公里；东有京广铁路和英佛京珠高速；南有银英路通往清远和广州。城市建设不断扩大和繁荣，2005年全部实现了村村通公路和硬底化，电力及邮政通讯事业快速发展。</p>
       <p>居亚洲第一的安徽海螺集团、台湾最大的台泥集团等知名水泥企业，把国际最先进的新型干法水泥旋窑生产技术带到了英德，使英德成为中国南方水泥之都。</p>
     </div>
   </section>
-<section class="section">
+  <section class="section">
     <h2 class="section-title"><span class="dot"></span>人文与特产</h2>
     <div class="content-card">
-      <p>目前，英城有中小学校4间，其中中学1间、小学3间。教学设施建设、教学质量居全市前列。2008年成功创建省教育强镇。医疗设施比较完善，市区有大型的医院3间（市人民医院、市中医院和英城信善医院)。体育事业发展较快，各社区都有比较完善的体育、娱乐、休闲场所；农村建有舞狮队、龙舟队、篮球队，其中英城篮球队和白沙龙舟队多次在比赛中取得优异成绩。</p>
-      <p>英城风景名胜甚多，有南山、宝晶宫、碧落洞、古西寺、通天岩等。其中，南山风景区位于市区南郊北江西岸，汉代始就设有供人游览的亭台寺阁50多座。南山摩崖石刻为广东省文物保护单位，现存100多方。宝晶宫生态旅游度假区为省首批省级风景名胜区、国家4A级旅游景区，宝晶宫溶洞为广东省规模最大、溶洞系统最复杂、最有科研价值的喀斯特洞穴之一，英城物产主要有水泥、竹笋、鸡心黄皮、沙糖橘等物产。2003年先后引进了产能规模。新中国成立后，兴修水利，种植基地、</p>
+      <p>目前，英城有中小学校4间，其中中学1间、小学3间。教学设施建设、教学质量居全市前列。2008年成功创建省教育强镇。医疗设施比较完善，市区有大型的医院3间（市人民医院、市中医院和英城信善医院）。体育事业发展较快，各社区都有比较完善的体育、娱乐、休闲场所；农村建有舞狮队、龙舟队、篮球队，其中英城篮球队和白沙龙舟队多次在比赛中取得优异成绩。</p>
+      <p>英城风景名胜甚多，有南山、宝晶宫、碧落洞、古西寺、通天岩等。其中，南山风景区位于市区南郊北江西岸，汉代始就设有供人游览的亭台寺阁50多座。南山摩崖石刻为广东省文物保护单位，现存100多方。宝晶宫生态旅游度假区为省首批省级风景名胜区、国家4A级旅游景区，宝晶宫溶洞为广东省规模最大、溶洞系统最复杂、最有科研价值的喀斯特洞穴之一。</p>
+      <p>英城物产主要有水泥、竹笋、鸡心黄皮、沙糖橘等。2003年先后引进了产能规模。</p>
       <p>英城文物遗存丰厚，有何公桥、人民大桥、源沛桥、南山摩崖石刻、碧落洞摩崖石刻、观音岩摩崖石刻、金龙岩摩崖石刻、老地湾清代建筑、莲塘村古楼、英州古城旧址、文峰塔、张屋仁丰井、新城井、江湾大井、功垂捍御牌坊、吴其贵墓、江湾何公墓、徐屋村利氏石牌坊、定光古寺、英德人民团体联合委员会旧址、古西寺、孔子庙等。</p>
-      <p>英城历史文化名人主要有：刘裕光，英德早期革命创始人之一；杨模，清代举人，主持会英书院讲席前后10年，历任四川纳溪、昭化、荣县、庆符等县知县（详见第四章</p>
-      <p>《名人撷英》之《英德籍历史文化名人》)。</p>
-      <p>英城民俗文化独具特色：附城话，也叫做“平声“。通用人口3万多人，附城话的特点是客家话的用词习惯，广州话的口形发音，可能是广州话、客家话与土著话的结合变音；白沙龙舟队，多次参加英德市龙舟大赛夺得第一名；岩前舞狮，属南狮流派，以鸡公狮为主，鸡公狮轻巧玲珑，生动活泼，颇具特色，更因其锣鼓乐“十点梅花“声调明亮清脆，悦耳动听，更显生动活泼。</p>
+      <p>英城历史文化名人主要有：刘裕光，英德早期革命创始人之一；杨模，清代举人，主持会英书院讲席前后10年，历任四川纳溪、昭化、荣县、庆符等县知县（详见第四章《名人撷英》之《英德籍历史文化名人》）。</p>
+      <p>英城民俗文化独具特色：附城话，也叫做"平声"。通用人口3万多人，附城话的特点是客家话的用词习惯，广州话的口形发音，可能是广州话、客家话与土著话的结合变音；白沙龙舟队，多次参加英德市龙舟大赛夺得第一名；岩前舞狮，属南狮流派，以鸡公狮为主，鸡公狮轻巧玲珑，生动活泼，颇具特色，更因其锣鼓乐"十点梅花"声调明亮清脆，悦耳动听，更显生动活泼。</p>
     </div>
   </section>
   <section class="section" style="padding-top:0;">
