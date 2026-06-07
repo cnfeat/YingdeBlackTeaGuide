@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /攻略md/
+Disallow: /towns/backup/
 
 Sitemap: https://yingzaoshe.cn/sitemap.xml
