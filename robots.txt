@@ -2,5 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /攻略md/
 Disallow: /towns/backup/
+Disallow: /site-index.html
+Disallow: /print.html
 
 Sitemap: https://yingzaoshe.cn/sitemap.xml
