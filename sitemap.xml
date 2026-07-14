@@ -269,4 +269,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+
+  <!-- Food Subpages -->
+  <url>
+    <loc>https://yingzaoshe.cn/food/yinghong.html</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
